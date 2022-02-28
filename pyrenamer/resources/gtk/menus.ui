@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <menu id="hamburger-menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Select all</attribute>
+        <attribute name="action">win.select-all</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_Unselect all</attribute>
+        <attribute name="action">win.unselect-all</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Patterns</attribute>
+        <attribute name="action">win.page-patterns</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Su_bstitutions</attribute>
+        <attribute name="action">win.page-substitutions</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_Insert / Delete</attribute>
+        <attribute name="action">win.page-insert-delete</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_Manual rename</attribute>
+        <attribute name="action">win.page-manual</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Imag_es</attribute>
+        <attribute name="action">win.page-patterns-images</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Musi_c</attribute>
+        <attribute name="action">win.page-patterns-music</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">P_references</attribute>
+        <attribute name="action">app.preferences</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Keyboard Shortcuts</attribute>
+        <attribute name="action">win.show-help-overlay</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_About pyRenamer</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

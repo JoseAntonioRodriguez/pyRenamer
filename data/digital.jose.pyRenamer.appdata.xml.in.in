@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>@appid@.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>pyRenamer</name>
+  <summary>Rename your files</summary>
+  <description>
+    <p>
+      pyRenamer is an application for mass file renaming.
+    </p>
+    <p>
+      Files can be renamed using patterns, substitutions, inserting or deleteing text, or even manually.
+      Image files can be also renamed using their EXIF tags and music files can be renamed using their internal metadata.
+    </p>
+  </description>
+  <launchable type="desktop-id">@appid@.desktop</launchable>
+  <url type="homepage">https://github.com/JoseAntonioRodriguez/pyrenamer</url>
+  <url type="bugtracker">https://github.com/JoseAntonioRodriguez/pyrenamer/issues</url>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <translation type="gettext">pyrenamer</translation>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="0.7.0" date="2022-XX-XX">
+      <description>
+        <p>
+          TODO
+        </p>
+      </description>
+    </release>
+  </releases>
+</component>

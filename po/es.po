@@ -1,752 +1,938 @@
-# Spanish translations for pyrenamer package.
-# Copyright (C) 2007 THE pyrenamer'S COPYRIGHT HOLDER
+# Spanish translations for pyRenamer.
+# Copyright (C) 2022 THE pyRenamer'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the pyrenamer package.
 # Adolfo González Blázquez <code@infinicode.org>, 2007.
-#
+# Jose Antonio Rodríguez Fernández <joseantonio.rguez.fdez@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pyrenamer 0.6\n"
+"Project-Id-Version: pyrenamer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-02 13:46+0200\n"
-"PO-Revision-Date: 2008-10-02 13:47+0100\n"
-"Last-Translator: Adolfo González Blázquez <code@infinicode.org>\n"
+"POT-Creation-Date: 2022-02-27 13:47+0100\n"
+"PO-Revision-Date: 2022-02-27 13:53+0100\n"
+"Last-Translator: Jose Antonio Rodríguez Fernández <joseantonio.rguez."
+"fdez@gmail.com>\n"
 "Language-Team: Spanish\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: ../data/pyrenamer.desktop.in.in.in.h:1
-msgid "Mass rename files"
-msgstr "Renombramiento masivo de archivos"
-
-#: ../data/pyrenamer.desktop.in.in.in.h:2
-#: ../data/pyrenamer.glade.h:178
+#: data/digital.jose.pyRenamer.appdata.xml.in.in:6
+#: data/digital.jose.pyRenamer.desktop.in.in:3
+#: pyrenamer/resources/ui/ApplicationWindow.ui:12
 msgid "pyRenamer"
 msgstr "pyRenamer"
 
-#: ../data/pyrenamer.glade.h:1
-msgid "*"
-msgstr "*"
+#: data/digital.jose.pyRenamer.appdata.xml.in.in:7
+#: data/digital.jose.pyRenamer.desktop.in.in:5
+msgid "Rename your files"
+msgstr "Renombrar sus archivos"
 
-#: ../data/pyrenamer.glade.h:2
+#: data/digital.jose.pyRenamer.appdata.xml.in.in:9
+msgid "pyRenamer is an application for mass file renaming."
+msgstr "pyRenamer es una aplicación para el renombrado masivo de archivos."
+
+#: data/digital.jose.pyRenamer.appdata.xml.in.in:12
 msgid ""
-"*\t\tSelect every visible file\n"
-"*.jpg\tSelect just files that end with the \"jpg\" extension\n"
-"\t\tSelect every file (including hidden ones)\n"
-".*\t\tSelect files starting by \".\""
+"Files can be renamed using patterns, substitutions, inserting or deleteing "
+"text, or even manually. Image files can be also renamed using their EXIF "
+"tags and music files can be renamed using their internal metadata."
 msgstr ""
-"*\t\tSeleccionar todos los archivos visibles\n"
-"*.jpg\tSeleccionar archivos que acaben con la extensión \"jpg\"\n"
-"\t\tSeleccionar todos los archivos (incluyendo los ocultos)\n"
-".*\t\tSeleccionar los archivos que empiecen por \".\""
+"Los archivos se pueden renombrar utilizando patrones, sustituciones, "
+"insertando o borrando texto, or incluso manualmente. Los archivos de imagen "
+"se pueden renombrar usando sus etiquetas EXIF y los archivos de música se "
+"pueden renombrar usando sus metadatos internos."
 
-#: ../data/pyrenamer.glade.h:6
-msgid "<b>Common substitutions</b>"
-msgstr "<b>Sustituciones comunes</b>"
+#: data/digital.jose.pyRenamer.appdata.xml.in.in:31
+msgid "TODO"
+msgstr "TODO"
 
-#: ../data/pyrenamer.glade.h:7
-msgid "<b>Default directories</b>"
-msgstr "<b>Directorios predeterminados</b>"
+#: data/digital.jose.pyRenamer.desktop.in.in:4
+#: pyrenamer/resources/ui/AboutDialog.ui:10
+msgid "Mass file renamer"
+msgstr "Renombrado masivo de archivos"
 
-#: ../data/pyrenamer.glade.h:8
-msgid "<b>Insert or delete characters from filenames</b>"
-msgstr "<b>Insertar o borrar caracteres de los nombres de archivos</b>"
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/digital.jose.pyRenamer.desktop.in.in:7
+msgid "@icon@"
+msgstr ""
 
-#: ../data/pyrenamer.glade.h:9
-msgid "<b>Options</b>"
-msgstr "<b>Opciones</b>"
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/digital.jose.pyRenamer.desktop.in.in:13
+msgid "rename;"
+msgstr "renombrar;"
 
-#: ../data/pyrenamer.glade.h:10
-msgid "<b>Rename files manually</b>"
-msgstr "<b>Renombrar archivos manualmente</b>"
+#: data/digital.jose.pyRenamer.gschema.xml:13
+msgid "Window maximized state"
+msgstr "Estado maximizado de la ventana"
 
-#: ../data/pyrenamer.glade.h:11
-msgid "<b>Rename files using patterns</b>"
-msgstr "<b>Renombrar archivos usando patrones</b>"
+#: data/digital.jose.pyRenamer.gschema.xml:18
+msgid "Window position (x coordinate)"
+msgstr "Posición de la ventana (coordenada x)"
 
-#: ../data/pyrenamer.glade.h:12
-msgid "<b>Rename images using their metadata</b>"
-msgstr "<b>Renombrar imágenes usando sus metadatos</b>"
+#: data/digital.jose.pyRenamer.gschema.xml:23
+msgid "Window position (y coordinate)"
+msgstr "Posición de la ventana (coordenada y)"
 
-#: ../data/pyrenamer.glade.h:13
-msgid "<b>Rename music using its metadata</b>"
-msgstr "<b>Renombrar música usando sus metadatos</b>"
+#: data/digital.jose.pyRenamer.gschema.xml:28
+msgid "Window width"
+msgstr "Anchura de la ventana"
 
-#: ../data/pyrenamer.glade.h:14
-msgid "<i>Put the mouse over the text fields to get help on which patterns you can use</i>"
-msgstr "<i>Ponga el ratón sobre los campos de texto para obtener ayuda sobre los patrones que puede usar</i>"
+#: data/digital.jose.pyRenamer.gschema.xml:33
+msgid "Window height"
+msgstr "Altura de la ventana"
 
-#: ../data/pyrenamer.glade.h:15
-msgid "<i>Select the file to rename, change its name and click Preview</i>"
-msgstr "<i>Seleccione el archivo a renombrar, cambie su nombre y haga click en \"Vista previa\"</i>"
+#: data/digital.jose.pyRenamer.gschema.xml:38
+msgid "Separator position"
+msgstr "Posición del separador"
 
-#: ../data/pyrenamer.glade.h:16
-msgid "<i>The default selected directory</i>"
-msgstr "<i>El directorio seleccionado por defecto</i>"
-
-#: ../data/pyrenamer.glade.h:17
-msgid "<i>The parent of the directories tree</i>"
-msgstr "<i>La raíz del árbol de directorios</i>"
-
-#: ../data/pyrenamer.glade.h:18
-msgid "Active"
-msgstr "Activo"
-
-#: ../data/pyrenamer.glade.h:19
-msgid "Add files recursively"
-msgstr "Añadir archivos recursivamente"
-
-#: ../data/pyrenamer.glade.h:20
-msgid "Add pattern"
-msgstr "Añadir patrón"
-
-#: ../data/pyrenamer.glade.h:21
+#: data/digital.jose.pyRenamer.gschema.xml:39
 msgid ""
-"All uppercase\n"
-"All downcase\n"
-"First letter uppercase\n"
-"First letter uppercase of each word"
+"Position of the separator between the directory tree and the files viewer."
 msgstr ""
-"Todas en mayúsculas\n"
-"Todas en minúsculas\n"
-"Primera letra en mayúsculas\n"
-"Primera letra de cada palabra en mayúsculas"
+"Posición del separador situado entre el árbol de directorios y el visor de "
+"archivos."
 
-#: ../data/pyrenamer.glade.h:25
-msgid "Browse..."
-msgstr "Examinar..."
+#: data/digital.jose.pyRenamer.gschema.xml:43
+msgid "Options pane visibility state"
+msgstr "Estado de visibilidad del panel de opciones"
 
-#: ../data/pyrenamer.glade.h:26
-msgid "C_lear"
-msgstr "_Limpiar"
+#: data/digital.jose.pyRenamer.gschema.xml:44
+msgid "Whether the options pane must be shown at startup."
+msgstr "Indica si el panel de opciones debe mostrarse al inicio."
 
-#: ../data/pyrenamer.glade.h:27
-msgid "C_lear Preview"
-msgstr "_Limpiar vista previa"
+#: data/digital.jose.pyRenamer.gschema.xml:48
+msgid "Default root directory"
+msgstr "Directorio raíz predeterminado"
 
-#: ../data/pyrenamer.glade.h:28
-msgid "Capitalization"
-msgstr "Capitalización"
+#: data/digital.jose.pyRenamer.gschema.xml:49
+msgid "Default root of the directory tree."
+msgstr "Directorio raíz predeterminado del árbol de directorios."
 
-#: ../data/pyrenamer.glade.h:29
+#: data/digital.jose.pyRenamer.gschema.xml:53
+msgid "Default active directory"
+msgstr "Directorio activo predeterminado"
+
+#: data/digital.jose.pyRenamer.gschema.xml:54
+msgid "Default active directory in the directory tree."
+msgstr "Directorio activo predeterminado en el árbol de directorios."
+
+#: data/digital.jose.pyRenamer.gschema.xml:58
+msgid "Show hidden files/directories"
+msgstr "Mostrar archivos/directorios ocultos"
+
+#: data/digital.jose.pyRenamer.gschema.xml:59
+msgid "Whether hidden files and directories must be shown."
+msgstr "Indica si se muestran archivos y directorios ocultos."
+
+#: data/digital.jose.pyRenamer.gschema.xml:63
+msgid "Renaming mode"
+msgstr "Modo de renombrado"
+
+#: data/digital.jose.pyRenamer.gschema.xml:64
 msgid ""
-"Changes:\n"
-"..... to .\n"
-"----  to -\n"
-"____ to _\n"
-"'     ' to  ' '"
+"Indicates if renaming operations must be applied over files, directories, or "
+"both."
 msgstr ""
-"Cambia:\n"
-"..... por .\n"
-"----  por -\n"
-"____ por _\n"
-"'     ' por  ' '"
+"Indica si las operaciones de renombrado deben aplicarse sobre archivos, "
+"directorios, o ambos."
 
-#: ../data/pyrenamer.glade.h:34
-msgid "Delete from"
-msgstr "Eliminar desde"
-
-#: ../data/pyrenamer.glade.h:35
-msgid ""
-"Files\n"
-"Directories\n"
-"Files and directories"
-msgstr ""
-"Ficheros\n"
-"Directorios\n"
-"Ficheros y directorios"
-
-#: ../data/pyrenamer.glade.h:38
-msgid "Fix duplicated symbols"
-msgstr "Arreglar símbolos duplicados"
-
-#: ../data/pyrenamer.glade.h:39
-msgid ""
-"Image metadata replacements:\n"
-"{imagewidth}\t\t\t640\n"
-"{imageheight}\t\t\t480\n"
-"{cameramaker}\t\t\tNikon\n"
-"{cameramodel}\t\t\tD-50\n"
-"{imagedate}\t\t\t22feb1980\n"
-"{imageyear}\t\t\t1980\n"
-"{imagemonth}\t\t\t02\n"
-"{imagemonthname}\t\tfebruary\n"
-"{imagemonthsimp}\t\tfeb\n"
-"{imageday}\t\t\t\t22\n"
-"{imagedayname}\t\tfriday\n"
-"{imagedaysimp}\t\tfri\n"
-"{imagetime}\t\t\t13_56_02\n"
-"{imagehour}\t\t\t13\n"
-"{imageminute}\t\t\t56\n"
-"{imagesecond}\t\t\t02\n"
-"\n"
-"Common replacements:\n"
-"Use {1} for first catched item. {2} for second, etc...\n"
-"Use {num} for adding 1, 2, 3... to file names\n"
-"Use {num2} for 01, 02, 03.....\n"
-"Use {num3} for 001, 002, 003...\n"
-"Use {num+10} for 10, 11, 12...\n"
-"Use {num2+10} for 010, 011, 012...\n"
-"Use {dir} for getting current dir\n"
-"\n"
-"Some today date replacements:\n"
-"{date}\t\t\t22feb1980\n"
-"{year}\t\t\t1980\n"
-"{month}\t\t02\n"
-"{monthname}\tfebruary\n"
-"{monthsimp}\tfeb\n"
-"{day}\t\t\t22\n"
-"{dayname}\t\tfriday\n"
-"{daysimp}\t\tfri\n"
-"\n"
-"Random number replacements:\n"
-"{rand} is random number between 0 and 100.\n"
-"{rand,3} is random number between 0 and 100 of 3 digits (012)\n"
-"{rand500} is random number between 0 and 500\n"
-"{rand10-20} is random number between 10 and 20\n"
-"{rand20,5} is random number between 0 and 20 of 5 digits (00012)"
-msgstr ""
-"Sustituciones de metadatos en imágenes:\n"
-"{imagewidth}\t\t\t640\n"
-"{imageheight}\t\t\t480\n"
-"{cameramaker}\t\t\tNikon\n"
-"{cameramodel}\t\t\tD-50\n"
-"{imagedate}\t\t\t22feb1980\n"
-"{imageyear}\t\t\t1980\n"
-"{imagemonth}\t\t\t02\n"
-"{imagemonthname}\t\tfebrero\n"
-"{imagemonthsimp}\t\tfeb\n"
-"{imageday}\t\t\t\t22\n"
-"{imagedayname}\t\tviernes\n"
-"{imagedaysimp}\t\tvie\n"
-"{imagetime}\t\t\t13_56_02\n"
-"{imagehour}\t\t\t13\n"
-"{imageminute}\t\t\t56\n"
-"{imagesecond}\t\t\t02\n"
-"\n"
-"Sustituciones comunes:\n"
-"Use {1} para la primera coincidencia. {2} para la segunda, etc...\n"
-"Use {num} para añadir 1, 2, 3... a los nombres de archivo\n"
-"Use {num2} para 01, 02, 03.....\n"
-"Use {num3} para 001, 002, 003...\n"
-"Use {num+10} para 10, 11, 12...\n"
-"Use {num2+10} para 010, 011, 012...\n"
-"Use {dir} para conseguir el directorio actual\n"
-"\n"
-"Algunas sustituciones de la fecha actual:\n"
-"{date}\t\t\t22feb1980\n"
-"{year}\t\t\t1980\n"
-"{month}\t\t02\n"
-"{monthname}\tfebrero\n"
-"{monthsimp}\tfeb\n"
-"{day}\t\t\t22\n"
-"{dayname}\t\tviernes\n"
-"{daysimp}\t\tvie\n"
-"\n"
-"Sustituciones con números aleatorios:\n"
-"{rand} es un número aleatorio entre 0 y 100.\n"
-"{rand,3} es un número aleatorio entre 0 y 100 de 3 dígitos (012)\n"
-"{rand500} es un número aleatorio entre 0 y 500\n"
-"{rand10-20} es un número aleatorio entre 10 y 20\n"
-"{rand20,5} es un número aleatorio entre 0 y 20 de 5 dígitos (00012)"
-
-#: ../data/pyrenamer.glade.h:82
-msgid "Images"
-msgstr "Imágenes"
-
-#: ../data/pyrenamer.glade.h:83
-msgid "Insert"
-msgstr "Insertar"
-
-#: ../data/pyrenamer.glade.h:84
-msgid "Insert / Delete"
-msgstr "Insertar / Eliminar"
-
-#: ../data/pyrenamer.glade.h:85
-msgid "Keep extensions"
-msgstr "Mantener extensiones"
-
-#: ../data/pyrenamer.glade.h:86
-msgid "Manual rename"
-msgstr "Renombramiento manual"
-
-#: ../data/pyrenamer.glade.h:87
-msgid "Music"
-msgstr "Música"
-
-#: ../data/pyrenamer.glade.h:88
-msgid ""
-"Music metadata replacements:\n"
-"{artist}\t\tAnxiA\n"
-"{title}\t\tEl mundo no es una mercancía\n"
-"{album}\tJóven pájaro negro muerto\n"
-"{track}\t\t02\n"
-"{tracktotal}\t10\n"
-"{myear}\t2006\n"
-"{genre}\tHardcore\n"
-"\n"
-"Common replacements:\n"
-"Use {1} for first catched item. {2} for second, etc...\n"
-"Use {num} for adding 1, 2, 3... to file names\n"
-"Use {num2} for 01, 02, 03.....\n"
-"Use {num3} for 001, 002, 003...\n"
-"Use {num+10} for 10, 11, 12...\n"
-"Use {num2+10} for 010, 011, 012...\n"
-"Use {dir} for getting current dir\n"
-"\n"
-"Some today date replacements:\n"
-"{date}\t\t\t22feb1980\n"
-"{year}\t\t\t1980\n"
-"{month}\t\t02\n"
-"{monthname}\tfebruary\n"
-"{monthsimp}\tfeb\n"
-"{day}\t\t\t22\n"
-"{dayname}\t\tfriday\n"
-"{daysimp}\t\tfri\n"
-"\n"
-"Random number replacements:\n"
-"{rand} is random number between 0 and 100.\n"
-"{rand,3} is random number between 0 and 100 of 3 digits (012)\n"
-"{rand500} is random number between 0 and 500\n"
-"{rand10-20} is random number between 10 and 20\n"
-"{rand20,5} is random number between 0 and 20 of 5 digits (00012)"
-msgstr ""
-"Sustituciones de metadatos en música:\n"
-"{artist}\t\tAnxiA\n"
-"{title}\t\tEl mundo no es una mercancía\n"
-"{album}\tJóven pájaro negro muerto\n"
-"{track}\t\t02\n"
-"{tracktotal}\t10\n"
-"{year}\t\t2006\n"
-"{genre}\tHardcore\n"
-"\n"
-"Sustituciones comunes:\n"
-"Use {1} para la primera coincidencia. {2} para la segunda, etc...\n"
-"Use {num} para añadir 1, 2, 3... a los nombres de archivo\n"
-"Use {num2} para 01, 02, 03.....\n"
-"Use {num3} para 001, 002, 003...\n"
-"Use {num+10} para 10, 11, 12...\n"
-"Use {num2+10} para 010, 011, 012...\n"
-"Use {dir} para conseguir el directorio actual\n"
-"\n"
-"Algunas sustituciones de la fecha actual:\n"
-"{date}\t\t\t22feb1980\n"
-"{year}\t\t\t1980\n"
-"{month}\t\t02\n"
-"{monthname}\tfebrero\n"
-"{monthsimp}\tfeb\n"
-"{day}\t\t\t22\n"
-"{dayname}\t\tviernes\n"
-"{daysimp}\t\tvie\n"
-"\n"
-"Sustituciones con números aleatorios:\n"
-"{rand} es un número aleatorio entre 0 y 100.\n"
-"{rand,3} es un número aleatorio entre 0 y 100 de 3 dígitos (012)\n"
-"{rand500} es un número aleatorio entre 0 y 500\n"
-"{rand10-20} es un número aleatorio entre 10 y 20\n"
-"{rand20,5} es un número aleatorio entre 0 y 20 de 5 dígitos (00012)"
-
-#: ../data/pyrenamer.glade.h:122
-msgid "New file name"
-msgstr "Nuevo nombre de archivo"
-
-#: ../data/pyrenamer.glade.h:123
-msgid "Original file name pattern"
-msgstr "Patrón de nombre de archivo original"
-
-#: ../data/pyrenamer.glade.h:124
-msgid "Pattern editor"
-msgstr "Editor de patrones"
-
-#: ../data/pyrenamer.glade.h:125
-msgid "Pattern:"
-msgstr "Patrón:"
-
-#: ../data/pyrenamer.glade.h:126
-msgid "Patterns"
-msgstr "Patrones"
-
-#: ../data/pyrenamer.glade.h:127
-msgid "Preview automatically"
-msgstr "Vista previa automática"
-
-#: ../data/pyrenamer.glade.h:128
-msgid "Remove accents"
-msgstr "Eliminar acentos"
-
-#: ../data/pyrenamer.glade.h:129
-msgid "Renamed file name pattern"
-msgstr "Patrón de nombre de archivo nuevo"
-
-#: ../data/pyrenamer.glade.h:130
-msgid "Replace"
-msgstr "Reemplazar"
-
-#: ../data/pyrenamer.glade.h:131
-msgid "Root"
-msgstr "Raíz"
-
-#: ../data/pyrenamer.glade.h:132
-msgid "Select  _nothing"
-msgstr "Seleccionar _nada"
-
-#: ../data/pyrenamer.glade.h:133
-msgid "Select _all"
-msgstr "Seleccionar _todo"
-
-#: ../data/pyrenamer.glade.h:134
+#: data/digital.jose.pyRenamer.gschema.xml:68
 msgid "Selection pattern"
 msgstr "Patrón de selección de archivos"
 
-#: ../data/pyrenamer.glade.h:135
-msgid "Show options"
-msgstr "Mostrar opciones"
+#: data/digital.jose.pyRenamer.gschema.xml:69
+msgid "Pattern used to select files to be renamed."
+msgstr "Patrón utilizado para seleccionar los archivos a renombrar."
 
-#: ../data/pyrenamer.glade.h:136
-msgid "Spaces"
-msgstr "Espacios"
+#: data/digital.jose.pyRenamer.gschema.xml:73
+msgid "Add files recursively"
+msgstr "Añadir archivos recursivamente"
 
-#: ../data/pyrenamer.glade.h:137
-msgid ""
-"Spaces to Underscores\n"
-"Underscores to Spaces\n"
-"Spaces to Dots\n"
-"Dots to Spaces\n"
-"Spaces to Dashes\n"
-"Dashes to Spaces"
+#: data/digital.jose.pyRenamer.gschema.xml:74
+msgid "Whether files are added recursively."
+msgstr "Añadir archivos recursivamente."
+
+#: data/digital.jose.pyRenamer.gschema.xml:78
+msgid "Keep file extensions"
+msgstr "Mantener extensiones de archivos"
+
+#: data/digital.jose.pyRenamer.gschema.xml:79
+msgid "Whether file extensions must be kept when renaming."
 msgstr ""
-"Espacios a guiones bajos\n"
-"Guiones bajos a espacios\n"
-"Espacios a puntos\n"
-"Puntos a espacios\n"
-"Espacios a guiones\n"
-"Guiones a espacios"
+"Indica si las extensiones de archivos deben mantenerse cuando se renombra."
 
-#: ../data/pyrenamer.glade.h:143
-msgid "Substitutions"
-msgstr "Sustituciones"
+#: data/digital.jose.pyRenamer.gschema.xml:83
+msgid "Auto preview changes"
+msgstr "Auto previsualizar los cambios"
 
-#: ../data/pyrenamer.glade.h:144
-msgid ""
-"Use {1} for first catched item. {2} for second, etc...\n"
-"Use {num} for adding 1, 2, 3... to file names\n"
-"Use {num2} for 01, 02, 03.....\n"
-"Use {num3} for 001, 002, 003...\n"
-"Use {num+10} for 10, 11, 12...\n"
-"Use {num2+10} for 010, 011, 012...\n"
-"Use {dir} for getting current dir\n"
-"\n"
-"Some today date replacements:\n"
-"{date}\t\t\t22feb1980\n"
-"{year}\t\t\t1980\n"
-"{month}\t\t02\n"
-"{monthname}\tfebruary\n"
-"{monthsimp}\tfeb\n"
-"{day}\t\t\t22\n"
-"{dayname}\t\tfriday\n"
-"{daysimp}\t\tfri\n"
-"\n"
-"Random number replacements:\n"
-"{rand} is random number between 0 and 100.\n"
-"{rand,3} is random number between 0 and 100 of 3 digits (012)\n"
-"{rand500} is random number between 0 and 500\n"
-"{rand10-20} is random number between 10 and 20\n"
-"{rand20,5} is random number between 0 and 20 of 5 digits (00012)"
+#: data/digital.jose.pyRenamer.gschema.xml:84
+msgid "Automatically show changes without clicking the Preview button."
 msgstr ""
-"Use {1} para la primera coincidencia. {2} para la segunda, etc...\n"
-"Use {num} para añadir 1, 2, 3... a los nombres de archivo\n"
-"Use {num2} para 01, 02, 03.....\n"
-"Use {num3} para 001, 002, 003...\n"
-"Use {num+10} para 10, 11, 12...\n"
-"Use {num2+10} para 010, 011, 012...\n"
-"Use {dir} para conseguir el directorio actual\n"
-"\n"
-"Algunas sustituciones de la fecha actual:\n"
-"{date}\t\t\t22feb1980\n"
-"{year}\t\t\t1980\n"
-"{month}\t\t02\n"
-"{monthname}\tfebrero\n"
-"{monthsimp}\tfeb\n"
-"{day}\t\t\t22\n"
-"{dayname}\t\tviernes\n"
-"{daysimp}\t\tvie\n"
-"\n"
-"Sustituciones con números aleatorios:\n"
-"{rand} es un número aleatorio entre 0 y 100.\n"
-"{rand,3} es un número aleatorio entre 0 y 100 de 3 dígitos (012)\n"
-"{rand500} es un número aleatorio entre 0 y 500\n"
-"{rand10-20} es un número aleatorio entre 10 y 20\n"
-"{rand20,5} es un número aleatorio entre 0 y 20 de 5 dígitos (00012)"
+"Mostrar cambios automáticamente sin pulsar el botón de Previsualización."
 
-#: ../data/pyrenamer.glade.h:168
-msgid "_Edit"
-msgstr "_Editar"
+#: data/digital.jose.pyRenamer.gschema.xml:88
+msgid "Original file/directory name patterns"
+msgstr "Patrones de nombre de archivo/directorio original"
 
-#: ../data/pyrenamer.glade.h:169
-msgid "_File"
-msgstr "_Archivo"
-
-#: ../data/pyrenamer.glade.h:170
-msgid "_Help"
-msgstr "A_yuda"
-
-#: ../data/pyrenamer.glade.h:171
-msgid "_Load names from file..."
-msgstr "_Cargar nombres desde fichero..."
-
-#: ../data/pyrenamer.glade.h:172
-msgid "_Preview"
-msgstr "Vista _previa"
-
-#: ../data/pyrenamer.glade.h:173
-msgid "_Rename"
-msgstr "_Renombrar"
-
-#: ../data/pyrenamer.glade.h:174
-msgid "_View"
-msgstr "_Vista"
-
-#: ../data/pyrenamer.glade.h:175
-msgid "at"
-msgstr "en"
-
-#: ../data/pyrenamer.glade.h:176
-msgid "from the end"
-msgstr "desde el final"
-
-#: ../data/pyrenamer.glade.h:177
-msgid "or at the end"
-msgstr "o al final"
-
-#: ../data/pyrenamer.glade.h:179
-msgid "pyRenamer preferences"
-msgstr "Preferencias de pyRenamer"
-
-#: ../data/pyrenamer.glade.h:180
-msgid "to"
-msgstr "hasta"
-
-#: ../data/pyrenamer.glade.h:181
-msgid "with"
-msgstr "con"
-
-#: ../data/pyrenamer.glade.h:182
+#: data/digital.jose.pyRenamer.gschema.xml:89
 msgid ""
-"{#}\tNumbers\n"
+"List of patterns to apply to the original file/directory name in the "
+"\"Patterns\" tab."
+msgstr ""
+"Lista de patrones a aplicar al nombre de archivo/directorio original en la "
+"pestaña \"Patrones\"."
+
+#: data/digital.jose.pyRenamer.gschema.xml:93
+msgid "Renamed file/directory name patterns"
+msgstr "Patrones de nombre de archivo/directorio renombrado"
+
+#: data/digital.jose.pyRenamer.gschema.xml:94
+msgid ""
+"List of patterns to use for the renamed file/directory name in the \"Patterns"
+"\" tab."
+msgstr ""
+"Lista de patrones a utilizar en el nombre del archivo/directorio en la "
+"pestaña \"Patrones\"."
+
+#: data/digital.jose.pyRenamer.gschema.xml:98
+msgid "Original file name patterns for images"
+msgstr "Patrones de nombre de archivo original para imágenes"
+
+#: data/digital.jose.pyRenamer.gschema.xml:99
+msgid ""
+"List of patterns to apply to the original file name in the \"Images\" tab."
+msgstr ""
+"Lista de patrones a aplicar al nombre de archivo original en la pestaña "
+"\"Imágenes\"."
+
+#: data/digital.jose.pyRenamer.gschema.xml:103
+msgid "Renamed file name patterns for images"
+msgstr "Patrones de nombre de archivo renombrado para imágenes"
+
+#: data/digital.jose.pyRenamer.gschema.xml:104
+msgid ""
+"List of patterns to use for the renamed file name in the \"Images\" tab."
+msgstr ""
+"Lista de patrones a utilizar en el nombre del archivo en la pestaña "
+"\"Imágenes\"."
+
+#: data/digital.jose.pyRenamer.gschema.xml:108
+msgid "Original file name patterns for music"
+msgstr "Patrones de nombre de archivo original para música"
+
+#: data/digital.jose.pyRenamer.gschema.xml:109
+msgid ""
+"List of patterns to apply to the original file name in the \"Music\" tab."
+msgstr ""
+"Lista de patrones a aplicar al nombre de archivo original en la pestaña "
+"\"Música\"."
+
+#: data/digital.jose.pyRenamer.gschema.xml:113
+msgid "Renamed file name patterns for music"
+msgstr "Patrones de nombre de archivo renombrado para música"
+
+#: data/digital.jose.pyRenamer.gschema.xml:114
+msgid "List of patterns to use for the renamed file name in the \"Music\" tab."
+msgstr ""
+"Lista de patrones a utilizar en el nombre del archivo en la pestaña \"Música"
+"\"."
+
+#: pyrenamer/application.py:46
+msgid "Root of the directory tree"
+msgstr "Raíz del árbol de directorios"
+
+#: pyrenamer/application.py:46
+msgid "ROOT_DIR"
+msgstr "DIR_RAÍZ"
+
+#: pyrenamer/application.py:48
+msgid "Show release version"
+msgstr "Mostrar el número de versión"
+
+#: pyrenamer/application.py:50
+msgid "[ACTIVE_DIR]"
+msgstr "[DIR_ACTIVO]"
+
+#: pyrenamer/application.py:160
+msgid "Error: ROOT_DIR must be an existing directory\n"
+msgstr "Error: DIR_RAÍZ debe existir y ser un directorio\n"
+
+#: pyrenamer/application.py:166
+msgid "Error: Only one ACTIVE_DIR is allowed\n"
+msgstr "Error: Solo se permite un DIR_ACTIVO\n"
+
+#: pyrenamer/application.py:173
+msgid "Error: ACTIVE_DIR must be an existing subdirectory of ROOT_DIR\n"
+msgstr "Error: DIR_ACTIVO debe existir y ser un subdirectorio de DIR_RAÍZ\n"
+
+#: pyrenamer/application_window.py:146
+msgid "Reading contents of directory '{}'..."
+msgstr "Leyendo el contenido del directorio '{}'..."
+
+#: pyrenamer/application_window.py:151
+msgid "Directory '{}' contains {} directories and {} files"
+msgstr "El directorio '{}' contiene {} directorios y {} archivos"
+
+#: pyrenamer/application_window.py:188
+msgid "Hide the options pane"
+msgstr "Oculta el panel de opciones"
+
+#: pyrenamer/application_window.py:190
+msgid "Show the options pane"
+msgstr "Muestra el panel de opciones"
+
+#: pyrenamer/application_window.py:242
+msgid ""
+"Could not rename file '{}' to '{}'\n"
+"{}"
+msgstr ""
+"No se pudo renombrar el archivo '{}' a '{}'\n"
+"{}"
+
+#: pyrenamer/application_window.py:272
+msgid "Ignore errors"
+msgstr "Ignorar errores"
+
+#: pyrenamer/file_browser.py:262
+msgid "<b>Original: </b>{}"
+msgstr "<b>Original: </b>{}s"
+
+#: pyrenamer/file_browser.py:264
+msgid ""
+"<b>Original: </b>{}\n"
+"<b>Renamed: </b>{}"
+msgstr ""
+"<b>Original: </b>{}\n"
+"<b>Renombrado: </b>{}"
+
+#: pyrenamer/patterns_page.py:59 pyrenamer/resources/ui/PatternSelector.ui:13
+msgid ""
+"{#}\t\tNumbers\n"
 "{L}\t\tLetters\n"
 "{C}\t\tCharacters (numbers and letters, not spaces)\n"
 "{X}\t\tNumbers, letters, and spaces\n"
 "{@}\tTrash"
 msgstr ""
-"{#}\tNúmeros\n"
+"{#}\t\tNúmeros\n"
 "{L}\t\tLetras\n"
 "{C}\t\tCaracteres (números y letras, no espacios)\n"
 "{X}\t\tNúmeros, letras y espacios\n"
 "{@}\tBasura"
 
-#: ../data/pyrenamer.glade.h:187
+#: pyrenamer/patterns_page.py:67
 msgid ""
-"{#}\tNumbers\n"
-"{L}\t\tLetters\n"
-"{C}\t\tCharacters (numbers and letters, not spaces)\n"
-"{X}\t\tNumbers, letters, and spaces\n"
-"{@}\tTrash "
+"Common replacements:\n"
+"Use {1} for first matched item, {2} for second, etc...\n"
+"Use {num} for adding 1, 2, 3... to file names\n"
+"Use {num2} for adding 01, 02, 03...\n"
+"Use {num3} for adding 001, 002, 003...\n"
+"Use {num+10} for adding 10, 11, 12...\n"
+"Use {num2+10} for adding 010, 011, 012...\n"
+"Use {dir} for getting the current directory\n"
+"\n"
+"Some today date replacements:\n"
+"{date}\t\t\t22Feb2022\n"
+"{year}\t\t\t2022\n"
+"{month}\t\t02\n"
+"{monthname}\tFebruary\n"
+"{monthsimp}\tFeb\n"
+"{day}\t\t\t22\n"
+"{dayname}\t\tTuesday\n"
+"{daysimp}\t\tTue\n"
+"\n"
+"Random number replacements:\n"
+"{rand} is a random number between 0 and 100.\n"
+"{rand,3} is a random number between 0 and 100 of 3 digits (012)\n"
+"{rand500} is a random number between 0 and 500\n"
+"{rand10-20} is a random number between 10 and 20\n"
+"{rand20,5} is a random number between 0 and 20 of 5 digits (00012)"
 msgstr ""
-"{#}\tNúmeros\n"
-"{L}\t\tLetras\n"
-"{C}\t\tCaracteres (números y letras, no espacios)\n"
-"{X}\t\tNúmeros, letras y espacios\n"
-"{@}\tBasura"
+"Sustituciones comunes:\n"
+"Use {1} para la primera coincidencia. {2} para la segunda, etc...\n"
+"Use {num} para añadir 1, 2, 3... a los nombres de archivo\n"
+"Use {num2} para añadir 01, 02, 03.....\n"
+"Use {num3} para añadir 001, 002, 003...\n"
+"Use {num+10} para añadir 10, 11, 12...\n"
+"Use {num2+10} para añadir 010, 011, 012...\n"
+"Use {dir} para obtener el directorio actual\n"
+"\n"
+"Algunas sustituciones de la fecha actual:\n"
+"{date}\t\t\t22feb2022\n"
+"{year}\t\t\t2022\n"
+"{month}\t\t02\n"
+"{monthname}\tfebrero\n"
+"{monthsimp}\tfeb\n"
+"{day}\t\t\t22\n"
+"{dayname}\t\tmartes\n"
+"{daysimp}\t\tmar\n"
+"\n"
+"Sustituciones con números aleatorios:\n"
+"{rand} es un número aleatorio entre 0 y 100.\n"
+"{rand,3} es un número aleatorio entre 0 y 100 de 3 dígitos (012)\n"
+"{rand500} es un número aleatorio entre 0 y 500\n"
+"{rand10-20} es un número aleatorio entre 10 y 20\n"
+"{rand20,5} es un número aleatorio entre 0 y 20 de 5 dígitos (00012)"
 
-#: ../data/pyrenamer.schemas.in.h:1
-msgid "0: Rename files / 1: Rename directories / 2: Rename files and directories"
-msgstr "0: Renombrar ficheros / 1: Renombrar directorios / 2: Renombrar ficheros y directorios"
+#: pyrenamer/patterns_page.py:95
+#, python-brace-format
+msgid ""
+"Image metadata replacements:\n"
+"{imagewidth}\t\t\t4272\n"
+"{imageheight}\t\t\t2848\n"
+"{cameramaker}\t\t\tCanon\n"
+"{cameramodel}\t\t\tCanon EOS 1100D\n"
+"{imagedate}\t\t\t22Feb2022\n"
+"{imageyear}\t\t\t2022\n"
+"{imagemonth}\t\t\t02\n"
+"{imagemonthname}\t\tFebruary\n"
+"{imagemonthsimp}\t\tFeb\n"
+"{imageday}\t\t\t\t22\n"
+"{imagedayname}\t\tTuesday\n"
+"{imagedaysimp}\t\tTue\n"
+"{imagetime}\t\t\t20_15_38\n"
+"{imagehour}\t\t\t20\n"
+"{imageminute}\t\t\t15\n"
+"{imagesecond}\t\t\t38\n"
+"\n"
+msgstr ""
+"Sustituciones de metadatos de imágenes:\n"
+"{imagewidth}\t\t\t4272\n"
+"{imageheight}\t\t\t2848\n"
+"{cameramaker}\t\t\tCanon\n"
+"{cameramodel}\t\t\tCanon EOS 1100D\n"
+"{imagedate}\t\t\t22feb2022\n"
+"{imageyear}\t\t\t2022\n"
+"{imagemonth}\t\t\t02\n"
+"{imagemonthname}\t\tfebrero\n"
+"{imagemonthsimp}\t\tfeb\n"
+"{imageday}\t\t\t\t22\n"
+"{imagedayname}\t\tmartes\n"
+"{imagedaysimp}\t\tmar\n"
+"{imagetime}\t\t\t20_15_38\n"
+"{imagehour}\t\t\t20\n"
+"{imageminute}\t\t\t15\n"
+"{imagesecond}\t\t\t38\n"
+"\n"
 
-#: ../data/pyrenamer.schemas.in.h:2
-msgid "Auto preview changes"
-msgstr "Auto previsualizar los cambios"
+#: pyrenamer/patterns_page.py:116
+#, python-brace-format
+msgid ""
+"Music metadata replacements:\n"
+"{artist}\t\t\tQueen\n"
+"{title}\t\t\tBohemian Rhapsody\n"
+"{album}\t\tA Night at the Opera\n"
+"{track}\t\t\t11\n"
+"{tracktotal}\t12\n"
+"{myear}\t\t1975\n"
+"{genre}\t\t\tRock\n"
+"\n"
+msgstr ""
+"Sustituciones de metadatos de música:\n"
+"{artist}\t\t\tQueen\n"
+"{title}\t\t\tBohemian Rhapsody\n"
+"{album}\t\tA Night at the Opera\n"
+"{track}\t\t\t11\n"
+"{tracktotal}\t12\n"
+"{myear}\t\t1975\n"
+"{genre}\t\t\tRock\n"
+"\n"
 
-#: ../data/pyrenamer.schemas.in.h:3
-msgid "Default active dir"
-msgstr "Directorio activo predeterminado"
+#: pyrenamer/patterns_page.py:307
+msgid "Repeated pattern"
+msgstr "Patrón repetido"
 
-#: ../data/pyrenamer.schemas.in.h:4
-msgid "Default root dir"
-msgstr "Directorio raíz predeterminado"
+#: pyrenamer/patterns_page.py:309
+msgid "The pattern '{}' already exists."
+msgstr "El patrón '{}' ya existe."
 
-#: ../data/pyrenamer.schemas.in.h:5
-msgid "Display the options pane"
-msgstr "Muestra el panel de opciones"
+#: pyrenamer/preferences.py:80
+msgid "Invalid active directory"
+msgstr "Directorio activo inválido"
 
-#: ../data/pyrenamer.schemas.in.h:6
-msgid "Is the window maximized?"
-msgstr "¿Está la ventana maximizada?"
+#: pyrenamer/preferences.py:82
+msgid "The active directory must be a subdirectory of the root directory."
+msgstr "El directorio activo deber ser un subdirectorio del directorio raíz."
 
-#: ../data/pyrenamer.schemas.in.h:7
-msgid "Keep files extensions"
-msgstr "Mantienes las extensiones de los ficheros"
+#: pyrenamer/renaming_notebook.py:58
+msgid "Patterns"
+msgstr "Patrones"
 
-#: ../data/pyrenamer.schemas.in.h:8
-msgid "Position of the pane separator"
-msgstr "Posición del separador del panel"
+#: pyrenamer/renaming_notebook.py:62
+msgid "Substitutions"
+msgstr "Sustituciones"
 
-#: ../data/pyrenamer.schemas.in.h:9
-msgid "Rename files or directories"
-msgstr "Renombrar ficheros o directorios"
+#: pyrenamer/renaming_notebook.py:66
+msgid "Insert / Delete"
+msgstr "Insertar / Eliminar"
 
-#: ../data/pyrenamer.schemas.in.h:10
-msgid "Window height"
-msgstr "Altura de la ventana"
+#: pyrenamer/renaming_notebook.py:72
+msgid "Manual rename"
+msgstr "Renombrado manual"
 
-#: ../data/pyrenamer.schemas.in.h:11
-msgid "Window width"
-msgstr "Anchura de la ventana"
+#: pyrenamer/renaming_notebook.py:76
+msgid "Images"
+msgstr "Imágenes"
 
-#: ../data/pyrenamer.schemas.in.h:12
-msgid "X position of the window"
-msgstr "Posición X de la ventana"
+#: pyrenamer/renaming_notebook.py:80
+msgid "Music"
+msgstr "Música"
 
-#: ../data/pyrenamer.schemas.in.h:13
-msgid "Y position of the window"
-msgstr "Posición Y de la ventana"
+#: pyrenamer/resources/gtk/help-overlay.ui:12
+msgctxt "shortcut window"
+msgid "General"
+msgstr "General"
 
-#: ../src/pyrenamer.py:440
+#: pyrenamer/resources/gtk/help-overlay.ui:17
+msgctxt "shortcut window"
+msgid "Refresh"
+msgstr "Actualizar"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:24
+msgctxt "shortcut window"
+msgid "Preview"
+msgstr "Vista previa"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:31
+msgctxt "shortcut window"
+msgid "Clear"
+msgstr "Limpiar"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:38
+msgctxt "shortcut window"
+msgid "Rename"
+msgstr "Renombrar"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:45
+msgctxt "shortcut window"
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:52
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Salir"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:60
+msgctxt "shortcut window"
+msgid "Edit"
+msgstr "Editar"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:65
+msgctxt "shortcut window"
+msgid "Undo"
+msgstr "Deshacer"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Redo"
+msgstr "Rehacer"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:79
+msgctxt "shortcut window"
+msgid "Select all"
+msgstr "Seleccionar todo"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:86
+msgctxt "shortcut window"
+msgid "Unselect all"
+msgstr "Deseleccionar todo"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:94
+msgctxt "shortcut window"
+msgid "View"
+msgstr "Vista"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:99
+msgctxt "shortcut window"
+msgid "Options pane"
+msgstr "Panel de opciones"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:106
+msgctxt "shortcut window"
+msgid "Menu"
+msgstr "Menú"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:113
+msgctxt "shortcut window"
+msgid "Patterns"
+msgstr "Patrones"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:120
+msgctxt "shortcut window"
+msgid "Substitutions"
+msgstr "Sustituciones"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:127
+msgctxt "shortcut window"
+msgid "Insert / Delete"
+msgstr "Insertar / Eliminar"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:134
+msgctxt "shortcut window"
+msgid "Manual rename"
+msgstr "Renombrado manual"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:141
+msgctxt "shortcut window"
+msgid "Images"
+msgstr "Imágenes"
+
+#: pyrenamer/resources/gtk/help-overlay.ui:148
+msgctxt "shortcut window"
+msgid "Music"
+msgstr "Música"
+
+#: pyrenamer/resources/gtk/menus.ui:6
+msgid "_Select all"
+msgstr "_Seleccionar todo"
+
+#: pyrenamer/resources/gtk/menus.ui:10
+msgid "_Unselect all"
+msgstr "_Deseleccionar todo"
+
+#: pyrenamer/resources/gtk/menus.ui:16
+msgid "_Patterns"
+msgstr "_Patrones"
+
+#: pyrenamer/resources/gtk/menus.ui:20
+msgid "Su_bstitutions"
+msgstr "S_ustituciones"
+
+#: pyrenamer/resources/gtk/menus.ui:24
+msgid "_Insert / Delete"
+msgstr "_Insertar / Eliminar"
+
+#: pyrenamer/resources/gtk/menus.ui:28
+msgid "_Manual rename"
+msgstr "Renombrado _manual"
+
+#: pyrenamer/resources/gtk/menus.ui:32
+msgid "Imag_es"
+msgstr "Imág_enes"
+
+#: pyrenamer/resources/gtk/menus.ui:36
+msgid "Musi_c"
+msgstr "Músi_ca"
+
+#: pyrenamer/resources/gtk/menus.ui:42
+msgid "P_references"
+msgstr "P_referencias"
+
+#: pyrenamer/resources/gtk/menus.ui:48
+msgid "_Keyboard Shortcuts"
+msgstr "Atajos del _teclado"
+
+#: pyrenamer/resources/gtk/menus.ui:52
+msgid "_About pyRenamer"
+msgstr "_Acerca de pyRenamer"
+
+#: pyrenamer/resources/ui/AddPatternDialog.ui:8
+msgid "Add pattern"
+msgstr "Añadir patrón"
+
+#: pyrenamer/resources/ui/AddPatternDialog.ui:21
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#: pyrenamer/resources/ui/AddPatternDialog.ui:35
+msgid "_OK"
+msgstr "_Aceptar"
+
+#: pyrenamer/resources/ui/AddPatternDialog.ui:63
+msgid "Pattern:"
+msgstr "Patrón:"
+
+#: pyrenamer/resources/ui/ApplicationWindow.ui:35
+msgid "Clear"
+msgstr "Limpiar"
+
+#: pyrenamer/resources/ui/ApplicationWindow.ui:47
+msgid "Preview"
+msgstr "Vista previa"
+
+#: pyrenamer/resources/ui/ApplicationWindow.ui:59
+msgid "Rename"
+msgstr "Renombrar"
+
+#: pyrenamer/resources/ui/FileBrowser.ui:54
 msgid "Original file name"
 msgstr "Nombre de archivo original"
 
-#: ../src/pyrenamer.py:445
+#: pyrenamer/resources/ui/FileBrowser.ui:74
 msgid "Renamed file name"
+msgstr "Nombre de archivo renombrado"
+
+#: pyrenamer/resources/ui/FileBrowser.ui:138
+msgid "Loading..."
+msgstr "Cargando..."
+
+#: pyrenamer/resources/ui/FileBrowser.ui:158
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: pyrenamer/resources/ui/InsertDeletePage.ui:41
+msgid "Insert or delete characters from filenames"
+msgstr "Insertar o borrar caracteres de los nombres de archivos"
+
+#: pyrenamer/resources/ui/InsertDeletePage.ui:60
+msgid "Insert"
+msgstr "Insertar"
+
+#: pyrenamer/resources/ui/InsertDeletePage.ui:96
+msgid "at"
+msgstr "en"
+
+#: pyrenamer/resources/ui/InsertDeletePage.ui:125
+msgid "or at the end"
+msgstr "o al final"
+
+#: pyrenamer/resources/ui/InsertDeletePage.ui:159
+msgid "Delete from"
+msgstr "Eliminar desde"
+
+#: pyrenamer/resources/ui/InsertDeletePage.ui:204
+msgid "to"
+msgstr "hasta"
+
+#: pyrenamer/resources/ui/InsertDeletePage.ui:233
+msgid "from the end"
+msgstr "desde el final"
+
+#: pyrenamer/resources/ui/ManualPage.ui:21
+msgid "Rename files manually"
+msgstr "Renombrar archivos manualmente"
+
+#: pyrenamer/resources/ui/ManualPage.ui:38
+msgid "New file name"
 msgstr "Nombre de archivo nuevo"
 
-#: ../src/pyrenamer.py:462
-#, python-format
-msgid ""
-"Could not rename file %s to %s\n"
-"%s"
+#: pyrenamer/resources/ui/ManualPage.ui:51
+msgid "Select the file to rename, change its name and click Preview"
 msgstr ""
-"No se pudo renombrar el archivo %s a %s\n"
-"%s"
+"Seleccione el archivo a renombrar, cambie su nombre y haga click en \"Vista "
+"previa\""
 
-#: ../src/pyrenamer.py:1347
-msgid "Select file"
-msgstr "Seleccionar fichero"
+#: pyrenamer/resources/ui/OptionsPane.ui:19
+msgid "Options"
+msgstr "Opciones"
 
-#: ../src/pyrenamer.py:1398
-#, python-format
-msgid "Reading contents of dir %s"
-msgstr "Leyendo el contenido del directorio %s"
+#: pyrenamer/resources/ui/OptionsPane.ui:45
+msgid "Rename _mode:"
+msgstr "_Modo de renombrado:"
 
-#: ../src/pyrenamer.py:1417
-#: ../src/pyrenamer.py:1477
-#, python-format
-msgid "Directory: %s - Files: %s"
-msgstr "Directorio: %s - Archivos: %s"
+#: pyrenamer/resources/ui/OptionsPane.ui:58
+msgid "_Selection pattern:"
+msgstr "Patrón de _selección de archivos:"
 
-#: ../src/pyrenamer.py:1470
-#, python-format
-msgid "Adding file %s"
-msgstr "Añadiendo archivo %s"
+#: pyrenamer/resources/ui/OptionsPane.ui:71
+msgid ""
+"*\t\tMatches everything\n"
+"?\t\tMatches any single character\n"
+"[seq]\tMatches any character in seq\n"
+"[!seq]\tMatches any character not in seq\n"
+"\n"
+"Examples:\n"
+"\t\tSelect every file\n"
+"*.jpg\tSelect only files ending with the \"jpg\" extension\n"
+"m*\t\tSelect only files starting with \"m\"\n"
+"[0-9]*\tSelect only files starting with a number"
+msgstr ""
+"*\t\tCoincide con todo\n"
+"?\t\tCoincide con un solo carácter\n"
+"[seq]\tCoincide con cualquier carácter presente en seq\n"
+"[!seq]\tCoincide con cualquier carácter ausente en seq\n"
+"\n"
+"Ejemplos:\n"
+"\t\tSelecciona todos los archivos\n"
+"*.jpg\tSelecciona archivos que acaben con la extensión \"jpg\"\n"
+"m*\t\tSelecciona archivos que empiecen con \"m\"\n"
+"[0-9]*\tSelecciona archivos que empiecen con un número"
 
-#: ../src/pyrenamer.py:1602
-msgid "Ignore errors"
-msgstr "Ignorar errores"
+#: pyrenamer/resources/ui/OptionsPane.ui:93
+msgid "Files"
+msgstr "Archivos"
 
-#. about.set_artists(pyrenamerglob.artists)
-#: ../src/pyrenamer.py:1616
-msgid "translator-credits"
-msgstr "Adolfo González Blázquez <code@infinicode.org>"
+#: pyrenamer/resources/ui/OptionsPane.ui:94
+msgid "Directories"
+msgstr "Directorios"
 
-#: ../src/pyrenamer_globals.py.in:73
-msgid "Mass file renamer for GNOME"
-msgstr "Renombramiento masivo de archivos para GNOME"
+#: pyrenamer/resources/ui/OptionsPane.ui:95
+msgid "Files and Directories"
+msgstr "Archivos y Directorios"
 
-#: ../src/pyrenamer_filefuncs.py:661
-#, python-format
-msgid "Error while renaming %s to %s! -> %s already exists!"
-msgstr "¡Error al renombrar %s a %s! -> %s ya existe!"
+#: pyrenamer/resources/ui/OptionsPane.ui:112
+msgid "Show _hidden files and directories"
+msgstr "Muestra archivos y directorios _ocultos"
 
-#: ../src/pyrenamer_filefuncs.py:670
-#, python-format
-msgid "Error while renaming %s to %s!"
-msgstr "¡Error al renombrar %s a %s!"
+#: pyrenamer/resources/ui/OptionsPane.ui:129
+msgid "Add files _recursively"
+msgstr "Añadir archivos _recursivamente"
 
-#: ../src/pyrenamer_pattern_editor.py:152
+#: pyrenamer/resources/ui/OptionsPane.ui:146
+msgid "Keep _extensions"
+msgstr "Mantener _extensiones"
+
+#: pyrenamer/resources/ui/OptionsPane.ui:163
+msgid "_Preview automatically"
+msgstr "Vista _previa automática"
+
+#: pyrenamer/resources/ui/PatternsEditorDialog.ui:13
 msgid "Patterns editor"
 msgstr "Editor de patrones"
 
-#: ../src/pyrenamer_pattern_editor.py:154
-msgid "Image patterns editor"
-msgstr "Editor de patrones para imágenes"
+#: pyrenamer/resources/ui/PatternsEditorDialog.ui:67
+msgid "pattern"
+msgstr "patrón"
 
-#: ../src/pyrenamer_pattern_editor.py:156
-msgid "Music patterns editor"
-msgstr "Editor de patrones para música"
+#: pyrenamer/resources/ui/PatternsEditorDialog.ui:97
+msgid "_Add"
+msgstr "_Añadir"
 
-#: ../src/pyrenamer_prefs.py:108
+#: pyrenamer/resources/ui/PatternsEditorDialog.ui:112
+msgid "_Remove"
+msgstr "_Eliminar"
+
+#: pyrenamer/resources/ui/PatternsEditorDialog.ui:127
+msgid "_Edit"
+msgstr "_Editar"
+
+#: pyrenamer/resources/ui/PatternsEditorDialog.ui:142
+msgid "_Up"
+msgstr "_Subir"
+
+#: pyrenamer/resources/ui/PatternsEditorDialog.ui:157
+msgid "_Down"
+msgstr "_Bajar"
+
+#: pyrenamer/resources/ui/PatternSelector.ui:35
+msgid "Save"
+msgstr "Guardar"
+
+#: pyrenamer/resources/ui/PatternSelector.ui:49
+msgid "Edit"
+msgstr "Editar"
+
+#: pyrenamer/resources/ui/PatternsPage.ui:21
+msgid "Rename files using patterns"
+msgstr "Renombrar archivos usando patrones"
+
+#: pyrenamer/resources/ui/PatternsPage.ui:38
+msgid "Original file name pattern"
+msgstr "Patrón de nombre de archivo original"
+
+#: pyrenamer/resources/ui/PatternsPage.ui:51
+msgid "Renamed file name pattern"
+msgstr "Patrón de nombre de archivo renombrado"
+
+#: pyrenamer/resources/ui/PatternsPage.ui:64
+msgid ""
+"Put the mouse over the text fields to get help on which patterns you can use"
+msgstr ""
+"Ponga el ratón sobre los campos de texto para obtener ayuda sobre los "
+"patrones que puede usar"
+
+#: pyrenamer/resources/ui/PreferencesDialog.ui:7
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: pyrenamer/resources/ui/PreferencesDialog.ui:48
+msgid "Default directories"
+msgstr "Directorios predeterminados"
+
+#: pyrenamer/resources/ui/PreferencesDialog.ui:87
+#: pyrenamer/resources/ui/PreferencesDialog.ui:103
+msgid "The root of the directory tree"
+msgstr "Raíz del árbol de directorios"
+
+#: pyrenamer/resources/ui/PreferencesDialog.ui:91
 msgid "Select root directory"
 msgstr "Seleccione el directorio raíz"
 
-#: ../src/pyrenamer_prefs.py:125
+#: pyrenamer/resources/ui/PreferencesDialog.ui:105
+msgid "_Root:"
+msgstr "_Raíz:"
+
+#: pyrenamer/resources/ui/PreferencesDialog.ui:118
+#: pyrenamer/resources/ui/PreferencesDialog.ui:133
+msgid "The default selected directory"
+msgstr "El directorio seleccionado por defecto"
+
+#: pyrenamer/resources/ui/PreferencesDialog.ui:120
+msgid "_Active:"
+msgstr "_Activo:"
+
+#: pyrenamer/resources/ui/PreferencesDialog.ui:137
 msgid "Select active directory"
 msgstr "Seleccione el directorio activo"
 
-#: ../src/pyrenamer_prefs.py:147
-#: ../src/pyrenamer_prefs.py:170
-msgid ""
-"\n"
-"The root directory is not valid!\n"
-"Please select another directory."
-msgstr ""
-"\n"
-"¡El directorio raíz no es válido!\n"
-"Por favor, seleccione otro directorio."
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:21
+msgid "Common substitutions"
+msgstr "Sustituciones comunes"
 
-#: ../src/pyrenamer_prefs.py:150
-#: ../src/pyrenamer_prefs.py:174
-msgid ""
-"\n"
-"The active directory is not valid!\n"
-"Please select another directory."
-msgstr ""
-"\n"
-"¡El directorio activo no es válido!\n"
-"Por favor, seleccione otro directorio."
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:35
+msgid "Spaces"
+msgstr "Espacios"
 
-#: ../src/pyrenamer_prefs.py:158
-#: ../src/pyrenamer_prefs.py:183
-msgid ""
-"\n"
-"Please set both directories!"
-msgstr ""
-"\n"
-"¡Por favor, seleccione los dos directorios!"
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:50
+msgid "Replace"
+msgstr "Reemplazar"
 
-#: ../src/pyrenamer_tooltips.py:39
-#, python-format
-msgid ""
-"<b>Original: </b> %s\n"
-"<b>Renamed: </b> %s"
-msgstr ""
-"<b>Original: </b> %s\n"
-"<b>Renombrado: </b> %s"
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:86
+msgid "with"
+msgstr "con"
 
-#: ../src/pyrenamer_tooltips.py:41
-#, python-format
-msgid "<b>Original: </b> %s"
-msgstr "<b>Original: </b> %s"
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:116
+msgid "Capitalization"
+msgstr "Capitalización"
 
-#: ../src/treefilebrowser.py:392
-msgid "Show hidden files"
-msgstr "Mostrar archivos ocultos"
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:131
+msgid "Remove accents"
+msgstr "Eliminar acentos"
 
-#~ msgid "<b>Rename MP3s using their ID3 tags</b>"
-#~ msgstr "<b>Renombrar MP3s usando su etiquetas ID3</b>"
-#~ msgid "{1}"
-#~ msgstr "{1}"
-#~ msgid "{X}"
-#~ msgstr "{X}"
-#~ msgid "Last selected dir"
-#~ msgstr "Último directorio seleccionado"
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:149
+msgid "Fix duplicated symbols"
+msgstr "Arreglar símbolos duplicados"
 
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:172
+msgid "Spaces to Underscores"
+msgstr "Espacios a Guiones bajos"
+
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:173
+msgid "Underscores to Spaces"
+msgstr "Guiones bajos a Espacios"
+
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:174
+msgid "Spaces to Dots"
+msgstr "Espacios a Puntos"
+
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:175
+msgid "Dots to Spaces"
+msgstr "Puntos a Espacios"
+
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:176
+msgid "Spaces to Hyphens"
+msgstr "Espacios a Guiones"
+
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:177
+msgid "Hyphens to Spaces"
+msgstr "Guiones a Espacios"
+
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:193
+msgid "ALL IN UPPERCASE"
+msgstr "TODO EN MAYÚSCULAS"
+
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:194
+msgid "all in lowercase"
+msgstr "todo en minúsculas"
+
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:195
+msgid "First letter in uppercase"
+msgstr "Primera letra en mayúsculas"
+
+#: pyrenamer/resources/ui/SubstitutionsPage.ui:196
+msgid "First Letter Of Each Word In Uppercase"
+msgstr "Primera Letra De Cada Palabra En Mayúsculas"

@@ -1,0 +1,50 @@
+# Copyright (C) 2006-2007 Adolfo González Blázquez <code@infinicode.org>
+# Copyright (C) 2022 Jose Antonio Rodríguez Fernández <joseantonio.rguez.fdez@gmail.com>
+#
+# This file is part of pyRenamer.
+#
+# pyRenamer is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# pyRenamer is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with pyRenamer. If not, see <https://www.gnu.org/licenses/>.
+
+
+import os
+from pathlib import Path
+
+
+UNINSTALLED = False
+
+VERSION = '@version@'
+APPLICATION_NAME = 'pyRenamer'
+APPLICATION_ID = '@application_id@'
+RESOURCE_BASE_PATH = '@resource_base_path@'
+
+DATA_DIR = Path('@pkgdata_dir@')
+LOCALE_DIR = Path('@locale_dir@')
+
+
+def uninstalled():
+    global UNINSTALLED, VERSION, APPLICATION_ID, RESOURCE_BASE_PATH, DATA_DIR, LOCALE_DIR
+
+    root_dir = Path(__file__).resolve().parent.parent
+
+    UNINSTALLED = True
+
+    VERSION = '0.7.0'
+    APPLICATION_ID = 'digital.jose.pyRenamer'
+    RESOURCE_BASE_PATH = '/digital/jose/pyRenamer'
+
+    DATA_DIR = root_dir / 'data'
+    LOCALE_DIR = root_dir / '_build' / 'po'
+
+    resource_path = root_dir / 'pyrenamer' / 'resources'
+    os.environ['G_RESOURCE_OVERLAYS'] = f'{RESOURCE_BASE_PATH}={resource_path}'

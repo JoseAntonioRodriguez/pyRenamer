@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="pyrenamer">
+
+    <enum id="digital.jose.pyRenamer.RenameMode">
+        <value nick="files" value="0"/>
+        <value nick="directories" value="1"/>
+        <value nick="both" value="2"/>
+    </enum>
+
+    <schema id="digital.jose.pyRenamer" path="/digital/jose/pyRenamer/">
+        <key type="b" name="window-maximized">
+            <default>false</default>
+            <summary>Window maximized state</summary>
+        </key>
+        <key type="i" name="window-position-x">
+            <range min="-1"/>
+            <default>-1</default>
+            <summary>Window position (x coordinate)</summary>
+        </key>
+        <key type="i" name="window-position-y">
+            <range min="-1"/>
+            <default>-1</default>
+            <summary>Window position (y coordinate)</summary>
+        </key>
+        <key type="i" name="window-width">
+            <range min="1"/>
+            <default>700</default>
+            <summary>Window width</summary>
+        </key>
+        <key type="i" name="window-height">
+            <range min="1"/>
+            <default>500</default>
+            <summary>Window height</summary>
+        </key>
+        <key type="i" name="separator-position">
+            <range min="1"/>
+            <default>250</default>
+            <summary>Separator position</summary>
+            <description>Position of the separator between the directory tree and the files viewer.</description>
+        </key>
+        <key type="b" name="options-shown">
+            <default>false</default>
+            <summary>Options pane visibility state</summary>
+            <description>Whether the options pane must be shown at startup.</description>
+        </key>
+        <key type="s" name="root-dir">
+            <default>''</default>
+            <summary>Default root directory</summary>
+            <description>Default root of the directory tree.</description>
+        </key>
+        <key type="s" name="active-dir">
+            <default>''</default>
+            <summary>Default active directory</summary>
+            <description>Default active directory in the directory tree.</description>
+        </key>
+        <key type="b" name="show-hidden">
+            <default>false</default>
+            <summary>Show hidden files/directories</summary>
+            <description>Whether hidden files and directories must be shown.</description>
+        </key>
+        <key enum="digital.jose.pyRenamer.RenameMode" name="rename-mode">
+            <default>'files'</default>
+            <summary>Renaming mode</summary>
+            <description>Indicates if renaming operations must be applied over files, directories, or both.</description>
+        </key>
+        <key type="s" name="selection-pattern">
+            <default>''</default>
+            <summary>Selection pattern</summary>
+            <description>Pattern used to select files to be renamed.</description>
+        </key>
+        <key type="b" name="add-recursive">
+            <default>false</default>
+            <summary>Add files recursively</summary>
+            <description>Whether files are added recursively.</description>
+        </key>
+        <key type="b" name="keep-extensions">
+            <default>false</default>
+            <summary>Keep file extensions</summary>
+            <description>Whether file extensions must be kept when renaming.</description>
+        </key>
+        <key type="b" name="auto-preview">
+            <default>false</default>
+            <summary>Auto preview changes</summary>
+            <description>Automatically show changes without clicking the Preview button.</description>
+        </key>
+        <key type="as" name="patterns-original">
+            <default>['{X}']</default>
+            <summary>Original file/directory name patterns</summary>
+            <description>List of patterns to apply to the original file/directory name in the "Patterns" tab.</description>
+        </key>
+        <key type="as" name="patterns-renamed">
+            <default>['{1}']</default>
+            <summary>Renamed file/directory name patterns</summary>
+            <description>List of patterns to use for the renamed file/directory name in the "Patterns" tab.</description>
+        </key>
+        <key type="as" name="patterns-original-images">
+            <default>['{X}']</default>
+            <summary>Original file name patterns for images</summary>
+            <description>List of patterns to apply to the original file name in the "Images" tab.</description>
+        </key>
+        <key type="as" name="patterns-renamed-images">
+            <default>['{1}', '{imageyear}{imagemonth}{imageday}_{imagetime}_{1}', '{imagewidth}x{imageheight}_{1}']</default>
+            <summary>Renamed file name patterns for images</summary>
+            <description>List of patterns to use for the renamed file name in the "Images" tab.</description>
+        </key>
+        <key type="as" name="patterns-original-music">
+            <default>['{X}']</default>
+            <summary>Original file name patterns for music</summary>
+            <description>List of patterns to apply to the original file name in the "Music" tab.</description>
+        </key>
+        <key type="as" name="patterns-renamed-music">
+            <default>['{1}', '{track} - {artist} ({album}) - {title}', '{track} - {artist}']</default>
+            <summary>Renamed file name patterns for music</summary>
+            <description>List of patterns to use for the renamed file name in the "Music" tab.</description>
+        </key>
+    </schema>
+</schemalist>

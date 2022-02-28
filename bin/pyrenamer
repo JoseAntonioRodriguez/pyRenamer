@@ -1,89 +1,164 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 
-"""
-Copyright (C) 2006-07 Adolfo González Blázquez <code@infinicode.org>
+# Copyright (C) 2006-2007 Adolfo González Blázquez <code@infinicode.org>
+# Copyright (C) 2022 Jose Antonio Rodríguez Fernández <joseantonio.rguez.fdez@gmail.com>
+#
+# This file is part of pyRenamer.
+#
+# pyRenamer is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# pyRenamer is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with pyRenamer. If not, see <https://www.gnu.org/licenses/>.
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License as
-published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version. 
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details. 
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
-
-If you find any bugs or have any suggestions email: code@infinicode.org
-"""
-
-try:
-    import pygtk
-    pygtk.require('2.0')
-except:
-      print "PyGtk 2.0 or later required for this app to run"
-      raise SystemExit
-
-try:
-    import gtk
-    from pyrenamer import pyrenamer
-except Exception, e:
-	print "ERROR:", e
-	raise SystemExit
-
-import os
 import sys
-import getopt
+from pathlib import Path
+import gettext
+import locale
+import subprocess
+import signal
+import logging
+
+import gi
+gi.require_version('Gtk', '3.0')
+gi.require_version('GExiv2', '0.10')
+from gi.repository import Gtk, Gio
 
 
-def command_usage():
-	""" Prints application usage from command line """
-	print "Usage: %s [options] start_dir" % os.path.basename(sys.argv[0])
-	print "\n%s options:" % os.path.basename(sys.argv[0])
-	print "	-?, --help		Displays this dialog"
-	print "	-r, --root root_dir	Start pyRenamer with a new root dir"
-	sys.exit(0)
+root_dir = Path(__file__).resolve().parent.parent
+uninstalled = (root_dir / 'pyrenamer.doap').is_file()
+devel = (root_dir / '.git').is_dir()
 
-def command_unknown(cmd):
-	""" Displays error en bad command """
-	print "Run '%s --help' to see a full list of available command line options." % os.path.basename(sys.argv[0])
+if uninstalled:
+    sys.path.insert(0, str(root_dir))
 
-def parse_commandline_options():
-	""" Parses options passed by command line and acts """
-	try:
-	    opts, args = getopt.getopt(sys.argv[1:],"hr:", ["help","root="])
-	except Exception, e:
-		print e
-		command_unknown(sys.argv[1])
-		sys.exit(2)
-	
-	for o, a in opts:
-		if o in ("-h", "--help"):
-			command_usage()
-		elif o in ("-r", "--root"):
-			if len(args) > 0:
-				return a, args[0]
-			else:
-				return a, None
-	
-	if len(args) > 0:
-		return None, args[0]
-	else: 
-		return None, None
+    # Hack to import conf.py.in without copying it to have a .py extension.
+    import importlib.machinery
+    import importlib.util
+
+    loader = importlib.machinery.SourceFileLoader('pyrenamer.conf', str(root_dir / 'pyrenamer' / 'conf.py.in'))
+    spec = importlib.util.spec_from_loader(loader.name, loader)
+    module = importlib.util.module_from_spec(spec)
+    loader.exec_module(module)
+
+    import pyrenamer
+    pyrenamer.conf = module
+    sys.modules['pyrenamer.conf'] = module
+
+import pyrenamer.conf
+
+if uninstalled:
+    pyrenamer.conf.uninstalled()
+
+
+def setup_logging(devel):
+    logging.addLevelName(logging.WARNING, 'WARN')  # Rename the WARNING level to WARN
+
+    if devel:
+        format = '%(asctime)s %(levelname)5s [%(name)s (%(funcName)s:%(lineno)s)] %(message)s'
+        level = logging.DEBUG
+    else:
+        format = '%(asctime)s %(levelname)5s %(message)s'
+        level = logging.ERROR
+
+    logging.basicConfig(format=format, level=level)
+
+
+def setup_i18n():
+    domain = pyrenamer.conf.__package__
+    locale_dir = pyrenamer.conf.LOCALE_DIR
+
+    gettext.install(domain, localedir=locale_dir)
+
+    # Gtk.Builder translations don't work with 'gettext' module. The 'locale' module must be used instead.
+    try:
+        locale.setlocale(locale.LC_ALL, '')
+    except locale.Error as e:
+        print(f"Couldn't set the locale: {e}; falling back to 'C' locale.")
+        locale.setlocale(locale.LC_ALL, 'C')
+    try:
+        locale.bindtextdomain(domain, locale_dir)
+        locale.bind_textdomain_codeset(domain, 'UTF-8')
+        locale.textdomain(domain)
+    except locale.Error as e:
+        print(f"Couldn't bind the translation domain. Some translations won't work.\n{e}")
+
+
+def setup_resources():
+    resource_file = pyrenamer.conf.DATA_DIR / f'{pyrenamer.conf.APPLICATION_ID}.gresource'
+
+    if uninstalled and not resource_file.exists():
+        subprocess.run(
+            [
+                'glib-compile-resources',
+                f'--target={resource_file}',
+                f'--sourcedir={pyrenamer.conf.__package__}/resources',
+                '--sourcedir=data/icons/hicolor',
+                f'{pyrenamer.conf.__package__}/resources/pyrenamer.gresource.xml',
+            ],
+            cwd=root_dir, check=True
+        )
+
+    try:
+        resource = Gio.resource_load(str(resource_file))
+        Gio.resources_register(resource)
+    except Exception as e:
+        # Allow resources to be missing when running uninstalled
+        if not uninstalled:
+            raise
+
+
+def setup_settings():
+    schema_file = pyrenamer.conf.DATA_DIR / f'{pyrenamer.conf.APPLICATION_ID}.gschema.xml'
+    compiled_schema_file = pyrenamer.conf.DATA_DIR / 'gschemas.compiled'
+
+    try:
+        schema_mtime = schema_file.stat().st_mtime
+        compiled_schema_mtime = compiled_schema_file.stat().st_mtime
+        must_compile = schema_mtime >= compiled_schema_mtime
+    except OSError:
+        must_compile = True
+
+    if uninstalled and must_compile:
+        subprocess.run(['glib-compile-schemas', str(pyrenamer.conf.DATA_DIR)], cwd=root_dir, check=True)
+
+
+def setup_exception_hook():
+    """Configures sys.excepthook to enforce Gtk application exiting when an exception occurs."""
+    def new_hook(cls, instance, traceback):
+        old_hook(cls, instance, traceback)
+        while Gtk.main_level():
+            Gtk.main_quit()
+        sys.exit(1)
+
+    old_hook = sys.excepthook
+    sys.excepthook = new_hook
+
+
+def run_application():
+    from pyrenamer.application import Application
+    from gi.repository import GLib
+
+    app = Application()
+    GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, signal.SIGINT, app.quit)
+    return app.run(sys.argv)
 
 
 def main():
+    setup_logging(devel)
+    setup_i18n()
+    setup_resources()
+    setup_settings()
+    setup_exception_hook()
+    return run_application()
 
-	rootdir, startdir = parse_commandline_options()
 
-	gtk.gdk.threads_init()
-	py = pyrenamer.pyRenamer(rootdir, startdir)
-	gtk.main()
-    
-
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    sys.exit(main())

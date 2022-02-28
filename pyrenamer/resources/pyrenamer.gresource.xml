@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/digital/jose/pyRenamer/icons">
+    <file>scalable/apps/digital.jose.pyRenamer.svg</file>
+  </gresource>
+  <gresource prefix="/digital/jose/pyRenamer">
+    <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
+    <file preprocess="xml-stripblanks">gtk/menus.ui</file>
+    <file preprocess="xml-stripblanks">ui/AboutDialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/AddPatternDialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/ApplicationWindow.ui</file>
+    <file preprocess="xml-stripblanks">ui/FileBrowser.ui</file>
+    <file preprocess="xml-stripblanks">ui/InsertDeletePage.ui</file>
+    <file preprocess="xml-stripblanks">ui/ManualPage.ui</file>
+    <file preprocess="xml-stripblanks">ui/OptionsPane.ui</file>
+    <file preprocess="xml-stripblanks">ui/PatternsEditorDialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/PatternSelector.ui</file>
+    <file preprocess="xml-stripblanks">ui/PatternsPage.ui</file>
+    <file preprocess="xml-stripblanks">ui/PreferencesDialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/RenamingNotebook.ui</file>
+    <file preprocess="xml-stripblanks">ui/SubstitutionsPage.ui</file>
+    <file preprocess="xml-stripblanks">ui/TreeFileBrowser.ui</file>
+  </gresource>
+</gresources>

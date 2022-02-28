@@ -1,0 +1,12 @@
+.vscode
+*~
+
+# Byte compiled Python files
+__pycache__/
+*.pyc
+
+# Compiled resources
+data/gschemas.compiled
+data/*.gresource
+
+test

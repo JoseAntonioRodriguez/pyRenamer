@@ -9,7 +9,7 @@
   <shortdesc xml:lang="en">Mass file renamer</shortdesc>
   <description xml:lang="en">pyRenamer is an application for mass file renaming.
   Files can be renamed using patterns, substitutions, inserting or deleteing text,
-  or even manually. Image files can be also renamed using their EXIF tags
+  or even manually. Image files can be also renamed using their EXIF tags,
   and music files can be renamed using their internal metadata.</description>
   <homepage rdf:resource="https://github.com/JoseAntonioRodriguez/pyrenamer" />
   <download-page rdf:resource="https://github.com/JoseAntonioRodriguez/pyrenamer/releases/" />

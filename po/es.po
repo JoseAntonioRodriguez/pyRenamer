@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyrenamer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-27 13:47+0100\n"
-"PO-Revision-Date: 2022-02-27 13:53+0100\n"
+"POT-Creation-Date: 2022-03-15 19:20+0100\n"
+"PO-Revision-Date: 2022-03-15 19:22+0100\n"
 "Last-Translator: Jose Antonio Rodríguez Fernández <joseantonio.rguez."
 "fdez@gmail.com>\n"
 "Language-Team: Spanish\n"
@@ -37,18 +37,22 @@ msgstr "pyRenamer es una aplicación para el renombrado masivo de archivos."
 
 #: data/digital.jose.pyRenamer.appdata.xml.in.in:12
 msgid ""
-"Files can be renamed using patterns, substitutions, inserting or deleteing "
+"Files can be renamed using patterns, substitutions, inserting or deleting "
 "text, or even manually. Image files can be also renamed using their EXIF "
 "tags and music files can be renamed using their internal metadata."
 msgstr ""
 "Los archivos se pueden renombrar utilizando patrones, sustituciones, "
-"insertando o borrando texto, or incluso manualmente. Los archivos de imagen "
+"insertando o borrando texto, o incluso manualmente. Los archivos de imagen "
 "se pueden renombrar usando sus etiquetas EXIF y los archivos de música se "
 "pueden renombrar usando sus metadatos internos."
 
 #: data/digital.jose.pyRenamer.appdata.xml.in.in:31
-msgid "TODO"
-msgstr "TODO"
+msgid ""
+"pyRenamer has been completely rewritten to be compliant with modern Linux "
+"distributions."
+msgstr ""
+"pyRenamer se ha reescrito por completo para hacerlo compatible con "
+"distribuciones Linux modernas."
 
 #: data/digital.jose.pyRenamer.desktop.in.in:4
 #: pyrenamer/resources/ui/AboutDialog.ui:10
@@ -257,35 +261,35 @@ msgstr "Mostrar el número de versión"
 msgid "[ACTIVE_DIR]"
 msgstr "[DIR_ACTIVO]"
 
-#: pyrenamer/application.py:160
+#: pyrenamer/application.py:164
 msgid "Error: ROOT_DIR must be an existing directory\n"
 msgstr "Error: DIR_RAÍZ debe existir y ser un directorio\n"
 
-#: pyrenamer/application.py:166
+#: pyrenamer/application.py:170
 msgid "Error: Only one ACTIVE_DIR is allowed\n"
 msgstr "Error: Solo se permite un DIR_ACTIVO\n"
 
-#: pyrenamer/application.py:173
+#: pyrenamer/application.py:177
 msgid "Error: ACTIVE_DIR must be an existing subdirectory of ROOT_DIR\n"
 msgstr "Error: DIR_ACTIVO debe existir y ser un subdirectorio de DIR_RAÍZ\n"
 
-#: pyrenamer/application_window.py:146
+#: pyrenamer/application_window.py:150
 msgid "Reading contents of directory '{}'..."
 msgstr "Leyendo el contenido del directorio '{}'..."
 
-#: pyrenamer/application_window.py:151
+#: pyrenamer/application_window.py:155
 msgid "Directory '{}' contains {} directories and {} files"
 msgstr "El directorio '{}' contiene {} directorios y {} archivos"
 
-#: pyrenamer/application_window.py:188
+#: pyrenamer/application_window.py:192
 msgid "Hide the options pane"
 msgstr "Oculta el panel de opciones"
 
-#: pyrenamer/application_window.py:190
+#: pyrenamer/application_window.py:194
 msgid "Show the options pane"
 msgstr "Muestra el panel de opciones"
 
-#: pyrenamer/application_window.py:242
+#: pyrenamer/application_window.py:247
 msgid ""
 "Could not rename file '{}' to '{}'\n"
 "{}"
@@ -293,7 +297,7 @@ msgstr ""
 "No se pudo renombrar el archivo '{}' a '{}'\n"
 "{}"
 
-#: pyrenamer/application_window.py:272
+#: pyrenamer/application_window.py:277
 msgid "Ignore errors"
 msgstr "Ignorar errores"
 
@@ -449,11 +453,11 @@ msgstr "Patrón repetido"
 msgid "The pattern '{}' already exists."
 msgstr "El patrón '{}' ya existe."
 
-#: pyrenamer/preferences.py:80
+#: pyrenamer/preferences.py:85
 msgid "Invalid active directory"
 msgstr "Directorio activo inválido"
 
-#: pyrenamer/preferences.py:82
+#: pyrenamer/preferences.py:87
 msgid "The active directory must be a subdirectory of the root directory."
 msgstr "El directorio activo deber ser un subdirectorio del directorio raíz."
 

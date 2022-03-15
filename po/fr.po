@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyrenamer 0.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-27 13:47+0100\n"
-"PO-Revision-Date: 2022-02-27 13:57+0100\n"
+"POT-Creation-Date: 2022-03-15 19:20+0100\n"
+"PO-Revision-Date: 2022-03-15 19:23+0100\n"
 "Last-Translator: Jose Antonio Rodríguez Fernández <joseantonio.rguez."
 "fdez@gmail.com>\n"
 "Language-Team: French\n"
@@ -38,13 +38,15 @@ msgstr ""
 
 #: data/digital.jose.pyRenamer.appdata.xml.in.in:12
 msgid ""
-"Files can be renamed using patterns, substitutions, inserting or deleteing "
+"Files can be renamed using patterns, substitutions, inserting or deleting "
 "text, or even manually. Image files can be also renamed using their EXIF "
 "tags and music files can be renamed using their internal metadata."
 msgstr ""
 
 #: data/digital.jose.pyRenamer.appdata.xml.in.in:31
-msgid "TODO"
+msgid ""
+"pyRenamer has been completely rewritten to be compliant with modern Linux "
+"distributions."
 msgstr ""
 
 #: data/digital.jose.pyRenamer.desktop.in.in:4
@@ -236,35 +238,35 @@ msgstr ""
 msgid "[ACTIVE_DIR]"
 msgstr ""
 
-#: pyrenamer/application.py:160
+#: pyrenamer/application.py:164
 msgid "Error: ROOT_DIR must be an existing directory\n"
 msgstr ""
 
-#: pyrenamer/application.py:166
+#: pyrenamer/application.py:170
 msgid "Error: Only one ACTIVE_DIR is allowed\n"
 msgstr ""
 
-#: pyrenamer/application.py:173
+#: pyrenamer/application.py:177
 msgid "Error: ACTIVE_DIR must be an existing subdirectory of ROOT_DIR\n"
 msgstr ""
 
-#: pyrenamer/application_window.py:146
+#: pyrenamer/application_window.py:150
 msgid "Reading contents of directory '{}'..."
 msgstr "Parcoure le contenu du répertoire '{}'..."
 
-#: pyrenamer/application_window.py:151
+#: pyrenamer/application_window.py:155
 msgid "Directory '{}' contains {} directories and {} files"
 msgstr "Le répertoire '{}' contient {} répertoires et {} fichiers"
 
-#: pyrenamer/application_window.py:188
+#: pyrenamer/application_window.py:192
 msgid "Hide the options pane"
 msgstr "Montrer le panneau d'options"
 
-#: pyrenamer/application_window.py:190
+#: pyrenamer/application_window.py:194
 msgid "Show the options pane"
 msgstr "Masquer le panneau d'options"
 
-#: pyrenamer/application_window.py:242
+#: pyrenamer/application_window.py:247
 msgid ""
 "Could not rename file '{}' to '{}'\n"
 "{}"
@@ -272,7 +274,7 @@ msgstr ""
 "Le fichier n'a pas pu être renommé de '{}' en '{}\n"
 "{}"
 
-#: pyrenamer/application_window.py:272
+#: pyrenamer/application_window.py:277
 msgid "Ignore errors"
 msgstr "Ignorer les erreurs"
 
@@ -428,11 +430,11 @@ msgstr "Règle répétée"
 msgid "The pattern '{}' already exists."
 msgstr "La règle '{}' existe déjà."
 
-#: pyrenamer/preferences.py:80
+#: pyrenamer/preferences.py:85
 msgid "Invalid active directory"
 msgstr "Répertoire actif invalide"
 
-#: pyrenamer/preferences.py:82
+#: pyrenamer/preferences.py:87
 msgid "The active directory must be a subdirectory of the root directory."
 msgstr ""
 

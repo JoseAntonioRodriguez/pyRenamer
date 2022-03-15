@@ -10,7 +10,7 @@
       pyRenamer is an application for mass file renaming.
     </p>
     <p>
-      Files can be renamed using patterns, substitutions, inserting or deleteing text, or even manually.
+      Files can be renamed using patterns, substitutions, inserting or deleting text, or even manually.
       Image files can be also renamed using their EXIF tags and music files can be renamed using their internal metadata.
     </p>
   </description>
@@ -26,10 +26,10 @@
   <translation type="gettext">pyrenamer</translation>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="0.7.0" date="2022-XX-XX">
+    <release version="0.7.0" date="2022-03-14">
       <description>
         <p>
-          TODO
+          pyRenamer has been completely rewritten to be compliant with modern Linux distributions.
         </p>
       </description>
     </release>

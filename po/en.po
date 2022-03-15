@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyrenamer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-27 13:47+0100\n"
-"PO-Revision-Date: 2022-02-27 13:50+0100\n"
+"POT-Creation-Date: 2022-03-15 19:20+0100\n"
+"PO-Revision-Date: 2022-03-15 19:20+0100\n"
 "Last-Translator: Jose Antonio Rodríguez Fernández <joseantonio.rguez."
 "fdez@gmail.com>\n"
 "Language-Team: English\n"
@@ -37,17 +37,21 @@ msgstr "pyRenamer is an application for mass file renaming."
 
 #: data/digital.jose.pyRenamer.appdata.xml.in.in:12
 msgid ""
-"Files can be renamed using patterns, substitutions, inserting or deleteing "
+"Files can be renamed using patterns, substitutions, inserting or deleting "
 "text, or even manually. Image files can be also renamed using their EXIF "
 "tags and music files can be renamed using their internal metadata."
 msgstr ""
-"Files can be renamed using patterns, substitutions, inserting or deleteing "
+"Files can be renamed using patterns, substitutions, inserting or deleting "
 "text, or even manually. Image files can be also renamed using their EXIF "
 "tags and music files can be renamed using their internal metadata."
 
 #: data/digital.jose.pyRenamer.appdata.xml.in.in:31
-msgid "TODO"
-msgstr "TODO"
+msgid ""
+"pyRenamer has been completely rewritten to be compliant with modern Linux "
+"distributions."
+msgstr ""
+"pyRenamer has been completely rewritten to be compliant with modern Linux "
+"distributions."
 
 #: data/digital.jose.pyRenamer.desktop.in.in:4
 #: pyrenamer/resources/ui/AboutDialog.ui:10
@@ -249,35 +253,35 @@ msgstr "Show release version"
 msgid "[ACTIVE_DIR]"
 msgstr "[ACTIVE_DIR]"
 
-#: pyrenamer/application.py:160
+#: pyrenamer/application.py:164
 msgid "Error: ROOT_DIR must be an existing directory\n"
 msgstr "Error: ROOT_DIR must be an existing directory\n"
 
-#: pyrenamer/application.py:166
+#: pyrenamer/application.py:170
 msgid "Error: Only one ACTIVE_DIR is allowed\n"
 msgstr "Error: Only one ACTIVE_DIR is allowed\n"
 
-#: pyrenamer/application.py:173
+#: pyrenamer/application.py:177
 msgid "Error: ACTIVE_DIR must be an existing subdirectory of ROOT_DIR\n"
 msgstr "Error: ACTIVE_DIR must be an existing subdirectory of ROOT_DIR\n"
 
-#: pyrenamer/application_window.py:146
+#: pyrenamer/application_window.py:150
 msgid "Reading contents of directory '{}'..."
 msgstr "Reading contents of directory '{}'..."
 
-#: pyrenamer/application_window.py:151
+#: pyrenamer/application_window.py:155
 msgid "Directory '{}' contains {} directories and {} files"
 msgstr "Directory '{}' contains {} directories and {} files"
 
-#: pyrenamer/application_window.py:188
+#: pyrenamer/application_window.py:192
 msgid "Hide the options pane"
 msgstr "Hide the options pane"
 
-#: pyrenamer/application_window.py:190
+#: pyrenamer/application_window.py:194
 msgid "Show the options pane"
 msgstr "Show the options pane"
 
-#: pyrenamer/application_window.py:242
+#: pyrenamer/application_window.py:247
 msgid ""
 "Could not rename file '{}' to '{}'\n"
 "{}"
@@ -285,7 +289,7 @@ msgstr ""
 "Could not rename file '{}' to '{}'\n"
 "{}"
 
-#: pyrenamer/application_window.py:272
+#: pyrenamer/application_window.py:277
 msgid "Ignore errors"
 msgstr "Ignore errors"
 
@@ -441,11 +445,11 @@ msgstr "Repeated pattern"
 msgid "The pattern '{}' already exists."
 msgstr "The pattern '{}' already exists."
 
-#: pyrenamer/preferences.py:80
+#: pyrenamer/preferences.py:85
 msgid "Invalid active directory"
 msgstr "Invalid active directory"
 
-#: pyrenamer/preferences.py:82
+#: pyrenamer/preferences.py:87
 msgid "The active directory must be a subdirectory of the root directory."
 msgstr "The active directory must be a subdirectory of the root directory."
 
@@ -925,15 +929,3 @@ msgstr "First letter in uppercase"
 #: pyrenamer/resources/ui/SubstitutionsPage.ui:196
 msgid "First Letter Of Each Word In Uppercase"
 msgstr "First Letter Of Each Word In Uppercase"
-
-#~ msgid "Original image file name patterns"
-#~ msgstr "Original image file name patterns"
-
-#~ msgid "Renamed image file name patterns"
-#~ msgstr "Renamed image file name patterns"
-
-#~ msgid "Original music file name patterns"
-#~ msgstr "Original music file name patterns"
-
-#~ msgid "Renamed music file name patterns"
-#~ msgstr "Renamed music file name patterns"

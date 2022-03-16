@@ -1,3 +1,9 @@
+# Install man page
+install_data(
+    'pyrenamer.1',
+    install_dir: man_dir / 'man1'
+)
+
 # Install Gsettings schema
 install_data(
     f'@application_id_no_profile@.gschema.xml',

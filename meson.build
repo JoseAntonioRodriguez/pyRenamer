@@ -36,6 +36,7 @@ resource_base_path = '/digital/jose/pyRenamer'
 prefix = get_option('prefix')
 
 bin_dir = prefix / get_option('bindir')
+man_dir = prefix / get_option('mandir')
 locale_dir = prefix / get_option('localedir')
 po_dir = meson.current_source_dir() / 'po'
 
@@ -48,6 +49,7 @@ icon_dir = data_dir / 'icons'
 
 # message('prefix:', prefix)
 # message('bin_dir:', bin_dir)
+# message('man_dir:', man_dir)
 # message('locale_dir:', locale_dir)
 # message('po_dir:', po_dir)
 # message('data_dir:', data_dir)

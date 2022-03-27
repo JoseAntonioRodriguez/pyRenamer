@@ -7,7 +7,16 @@ Image files can be also renamed using their EXIF tags, and music files can be re
 
 pyRenamer is released under the terms of the GNU General Public License Version 3.
 
+![pyRenamer](screenshots/pyRenamer.png)
+
+
+## About this repository
+
 This repository contains an evolved version of the [original pyRenamer](https://github.com/infinicode/pyrenamer) after being migrated to Python 3 and GTK+ 3.
+
+pyRenamer was once a very common application in many Linux distributions but it became unmaintained some years ago.
+It is no longer available in modern distributions and original code does not run without installing old dependencies.
+I really missed pyRenamer so I have tried to revive it by migrating the code to Python 3 and GTK+ 3 so it runs again in modern Linux distributions.
 
 
 ## Requirements

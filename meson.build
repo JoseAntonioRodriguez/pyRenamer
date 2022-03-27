@@ -1,5 +1,4 @@
-# TODO: Explore default_options: ['python.install_env=auto'] when meson 0.62 is released
-project('pyrenamer', version: '0.7.0', meson_version: '>=0.60.0', default_options: ['prefix=/usr'])
+project('pyrenamer', version: '1.0.0', meson_version: '>=0.60.0', default_options: ['prefix=/usr'])
 
 python = import('python')
 i18n = import('i18n')
@@ -9,11 +8,6 @@ python3 = python.find_installation('python3', modules: ['taglib'])
 if not python3.found()
     error('Python 3 is required to build and run pyRenamer.')
 endif
-
-# message('full_path()', python3.full_path())
-# message('get_install_dir()', python3.get_install_dir())
-# message('get_path(\'purelib\')', python3.get_path('purelib'))
-# message('get_path(\'platlib\')', python3.get_path('platlib'))
 
 dependency('python3', version: '>= 3.7')
 dependency('pygobject-3.0', version: '>= 3.36')

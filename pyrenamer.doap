@@ -11,9 +11,9 @@
   Files can be renamed using patterns, substitutions, inserting or deleteing text,
   or even manually. Image files can be also renamed using their EXIF tags,
   and music files can be renamed using their internal metadata.</description>
-  <homepage rdf:resource="https://github.com/JoseAntonioRodriguez/pyrenamer" />
-  <download-page rdf:resource="https://github.com/JoseAntonioRodriguez/pyrenamer/releases/" />
-  <bug-database rdf:resource="https://github.com/JoseAntonioRodriguez/pyrenamer/issues" />
+  <homepage rdf:resource="https://github.com/JoseAntonioRodriguez/pyRenamer" />
+  <download-page rdf:resource="https://github.com/JoseAntonioRodriguez/pyRenamer/releases/" />
+  <bug-database rdf:resource="https://github.com/JoseAntonioRodriguez/pyRenamer/issues" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
   <programming-language>Python</programming-language>
 

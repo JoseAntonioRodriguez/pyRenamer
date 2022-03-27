@@ -15,8 +15,8 @@
     </p>
   </description>
   <launchable type="desktop-id">@appid@.desktop</launchable>
-  <url type="homepage">https://github.com/JoseAntonioRodriguez/pyrenamer</url>
-  <url type="bugtracker">https://github.com/JoseAntonioRodriguez/pyrenamer/issues</url>
+  <url type="homepage">https://github.com/JoseAntonioRodriguez/pyRenamer</url>
+  <url type="bugtracker">https://github.com/JoseAntonioRodriguez/pyRenamer/issues</url>
   <kudos>
     <kudo>AppMenu</kudo>
     <kudo>HiDpiIcon</kudo>
@@ -26,7 +26,7 @@
   <translation type="gettext">pyrenamer</translation>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="0.7.0" date="2022-03-14">
+    <release version="1.0.0" date="2022-03-27">
       <description>
         <p>
           pyRenamer has been completely rewritten to be compliant with modern Linux distributions.

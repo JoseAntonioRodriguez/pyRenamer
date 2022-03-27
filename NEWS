@@ -1,4 +1,4 @@
-# 2022-03-14 pyRenamer 0.7.0
+# 2022-03-27 pyRenamer 1.0.0
 
 * Completely rewritten and migrated to Python 3 and GTK+ 3, so it is runnable again on modern Linux distributions.
 * UI changes to look like a modern GTK+ 3 application.
@@ -32,7 +32,7 @@
     - Fixed bug when trying to display error dialog on bad preferences.
     - Reverse elements on recursive listing, so we rename deeper files and directories first.
     - Fix file capitalization.
-    - If root or active dir is hidden, pyrenamer fails no more.
+    - If root or active dir is hidden, pyRenamer fails no more.
     - Use `{myear}` for getting an album year in music renaming, instead of `{year}`.
     - Fix crash when a id3 tag is not available or wrong, returning an empty filename (LP: #235161).
     - Fix crash while processing some bad exif tags, catching possible exceptions (LP: #261832).

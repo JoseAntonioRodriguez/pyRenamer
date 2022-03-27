@@ -39,7 +39,7 @@ def uninstalled():
 
     UNINSTALLED = True
 
-    VERSION = '0.7.0'
+    VERSION = '1.0.0'
     APPLICATION_ID = 'digital.jose.pyRenamer'
     RESOURCE_BASE_PATH = '/digital/jose/pyRenamer'
 

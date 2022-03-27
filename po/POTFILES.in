@@ -1,0 +1,37 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+
+data/digital.jose.pyRenamer.appdata.xml.in.in
+data/digital.jose.pyRenamer.desktop.in.in
+data/digital.jose.pyRenamer.gschema.xml
+pyrenamer/application.py
+pyrenamer/application_window.py
+pyrenamer/file_browser.py
+pyrenamer/insert_delete_page.py
+pyrenamer/manual_page.py
+pyrenamer/options_pane.py
+pyrenamer/paths.py
+pyrenamer/patterns_page.py
+pyrenamer/preferences.py
+pyrenamer/renaming_notebook.py
+pyrenamer/renamer.py
+pyrenamer/renaming_rules.py
+pyrenamer/substitutions_page.py
+pyrenamer/tree_file_browser.py
+pyrenamer/window_state.py
+pyrenamer/resources/gtk/help-overlay.ui
+pyrenamer/resources/gtk/menus.ui
+pyrenamer/resources/ui/AboutDialog.ui
+pyrenamer/resources/ui/AddPatternDialog.ui
+pyrenamer/resources/ui/ApplicationWindow.ui
+pyrenamer/resources/ui/FileBrowser.ui
+pyrenamer/resources/ui/InsertDeletePage.ui
+pyrenamer/resources/ui/ManualPage.ui
+pyrenamer/resources/ui/OptionsPane.ui
+pyrenamer/resources/ui/PatternsEditorDialog.ui
+pyrenamer/resources/ui/PatternSelector.ui
+pyrenamer/resources/ui/PatternsPage.ui
+pyrenamer/resources/ui/PreferencesDialog.ui
+pyrenamer/resources/ui/RenamingNotebook.ui
+pyrenamer/resources/ui/SubstitutionsPage.ui
+pyrenamer/resources/ui/TreeFileBrowser.ui

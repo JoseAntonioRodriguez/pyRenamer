@@ -1,0 +1,89 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Copyright (C) 2006-07 Adolfo González Blázquez <code@infinicode.org>
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version. 
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details. 
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+If you find any bugs or have any suggestions email: code@infinicode.org
+"""
+
+try:
+    import pygtk
+    pygtk.require('2.0')
+except:
+      print "PyGtk 2.0 or later required for this app to run"
+      raise SystemExit
+
+try:
+    import gtk
+    from pyrenamer import pyrenamer
+except Exception, e:
+	print "ERROR:", e
+	raise SystemExit
+
+import os
+import sys
+import getopt
+
+
+def command_usage():
+	""" Prints application usage from command line """
+	print "Usage: %s [options] start_dir" % os.path.basename(sys.argv[0])
+	print "\n%s options:" % os.path.basename(sys.argv[0])
+	print "	-?, --help		Displays this dialog"
+	print "	-r, --root root_dir	Start pyRenamer with a new root dir"
+	sys.exit(0)
+
+def command_unknown(cmd):
+	""" Displays error en bad command """
+	print "Run '%s --help' to see a full list of available command line options." % os.path.basename(sys.argv[0])
+
+def parse_commandline_options():
+	""" Parses options passed by command line and acts """
+	try:
+	    opts, args = getopt.getopt(sys.argv[1:],"hr:", ["help","root="])
+	except Exception, e:
+		print e
+		command_unknown(sys.argv[1])
+		sys.exit(2)
+	
+	for o, a in opts:
+		if o in ("-h", "--help"):
+			command_usage()
+		elif o in ("-r", "--root"):
+			if len(args) > 0:
+				return a, args[0]
+			else:
+				return a, None
+	
+	if len(args) > 0:
+		return None, args[0]
+	else: 
+		return None, None
+
+
+def main():
+
+	rootdir, startdir = parse_commandline_options()
+
+	gtk.gdk.threads_init()
+	py = pyrenamer.pyRenamer(rootdir, startdir)
+	gtk.main()
+    
+
+if __name__ == "__main__":
+    main()

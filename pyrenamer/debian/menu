@@ -1,0 +1,6 @@
+?package(pyrenamer): needs="X11" \
+  section="Applications/File Management" \
+  hints="Gnome" \
+  title="pyRenamer" \
+  icon="/usr/share/pixmaps/pyrenamer.xpm" \
+  command="/usr/bin/pyrenamer"

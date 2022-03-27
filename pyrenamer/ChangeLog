@@ -1,0 +1,767 @@
+2008-10-07  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (get_icon):
+	Added a few more extensions for displaying their icons.
+
+2008-10-06  Adolfo González Blázquez  <code@infinicode.org>
+
+	* doc/pyrenamer.1:
+	Updated man page.
+
+2008-10-02  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	* src/pyrenamer.py: (__init__), (preview_rename_rows),
+	  (on_insert_radio_toggled), (on_delete_radio_toggled),
+	  (on_delete_end_toggled):
+	* src/pyrenamer_filefuncs.py: (delete_from):
+	Add option to delete a number of chars from the end of the filename.
+
+2008-10-02  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/treefilebrowser.py: (__init__), (get_default_icons),
+	  (get_default_icons), (get_default_icons), (get_default_icons):
+	Load icons once at start, and the use it again and again.
+
+2008-10-01  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (__init__), (icon_theme_changed):
+	If icon theme is changed, reload the default icons,
+	although the user should hit refresh to view them,
+	because we don't want any previewed changes to get lost.
+
+2008-10-01  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (__init__), (get_default_icons),
+	  (get_icon):
+	Load icons once at start, and the use it again and again.
+
+2008-10-01  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (create_model), (populate_add_to_view):
+	Use gtk.ListStore instead of gtk.TreeStore to store files on treeview.
+
+2008-09-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* Version 0.6.0 Released
+
+2008-09-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_pattern_editor.py: (get_patterns):
+	Added better default patterns for music and images.
+
+2008-09-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (__init)), (enable_rename_and_clean),
+	  (on_manual_key_press_event):
+	Fix enabling/disabling rename button.
+
+2008-09-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (on_manual_key_press_event):
+	Another fix for manual renaming using keys: set correct single selection mode.
+
+2008-09-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (on_rename_button_clicked):
+	Disable redo menu option when you've just renamed.
+
+2008-09-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (on_manual_key_press_event), (on_clean_button_clicked):
+	Fix problems on manual rename: cleaning and changing file with keys.
+
+2008-09-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (preview_rename_rows):
+	Fix another stupid bug introduced by me, that prevented
+	substitutions to work when fix duplicated was not selected.
+
+2008-09-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_filefuncs.py: (replace_duplicated):
+	Remove stupid print statement.
+
+2008-09-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (preview_rename_rows):
+	Revert change that prevented to use several substitutions
+	(tab 2) at the same time.
+
+2008-09-16  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.schemas.in:
+	Change 'filedir' schema to 'options_filedir'.
+
+2008-09-16  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (preview_rename_rows),
+	* src/pyrenamer_filefuncs.py: (replace_music_hachoir),
+	  (replace_music_eyed3), (clean_metadata):
+	Revert previous commit. Instead, clean each tag while is read.
+	Don't use this for image metadata.
+
+2008-09-16  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (preview_rename_rows),
+	* src/pyrenamer_filefuncs.py: (replace_music_eyed3):
+	Do music/images patterns rename before applying general patterns, so
+	cleaning metadata bad characters doesn't remove things like dir/{1}.
+
+2008-09-16  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (rename_rows),
+	* src/pyrenamer_filefuncs.py: (rename_file):
+	Display more information on error dialog.
+
+2008-09-15  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_pattern_editor.py: (create_window):
+	Set the pattern editor window title translatable.
+
+2008-09-15  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (preview_rename_rows):
+	In subs tab, if nothing is selected, don't enable rename.
+
+2008-09-15  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (on_preview_button_clicked):
+	If nothing needs to be renamed, disable the Rename button.
+
+2008-09-15  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (__init__), (on_main_window_configure_event):
+	Fix error placing the main window and setting it to correct width.
+
+2008-09-15  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/treefilebrowser.py: (check_active_dir):
+	Check if a directory is suitable for setting the active dir.
+
+2008-09-15  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (__init__), (rename_rows),
+	  (on_rename_button_clicked), (display_error_dialog):
+	Add option to ignore next errors while renaming.
+
+2008-09-15  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (__init__), (dir_selected):
+	Fix bug that makes the treeview populate twice,
+	for example, when changing from "Show Directories" to
+	"Show Files" very fast.
+
+2008-09-15  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (get_icon):
+	Add mime type for video files, so they display a correct icon.
+
+2008-09-15  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	Updated tooltip for music renaming patterns.
+
+2008-09-12  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (__init__):
+	* src/pyrenamer_filefuncs.py:
+	  (replace_music_hachoir), (replace_music_eyed3):
+	* src/pyrenamer_globals.py.in:
+	For music rename first try to use hachoir, then eyed3.
+
+2008-09-12  Adolfo González Blázquez  <code@infinicode.org>
+
+	* configure.ac:
+	Don't check for python-eyed3 or python-hachoir-metadata,
+	because we do it on runtime.
+
+2008-09-11  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	Changed some strings.
+
+2008-09-11  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_prefs.py: (preferences_save):
+	Get pane position from main variable, not from the pane itself.
+
+2008-09-11  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_filefuncs.py: (get_file_listing_recursive):
+	Forgot to add root directory contents to the list on previous commit.
+
+2008-09-11  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_filefuncs.py: (get_file_listing_recursive):
+	Reverse elements on recursive listing, so we rename deeper files and
+	directories first.
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_prefs.py: (on_prefs_close_clicked), (on_prefs_destroy):
+	Fixed bug when trying to display error dialog on bad preferences.
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	* src/pyrenamer.py: (__init__), (preview_rename_rows):
+	* src/pyrenamer_filefuncs.py: (replace_duplicated):
+	Fix duplicted symbols (change ... to . or '   ' to ' ').
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (on_notebook_switch_page):
+	When changing to manual rename put the selected filename
+	on the text field to rename.
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	* data/pyrenamer.schemas.in:
+	* src/pyrenamer.py: (__init__),
+	  (on_original_pattern_changed), (on_renamed_pattern_changed),
+	  (on_subs_spaces_combo_changed), (on_subs_capitalization_combo_changed),
+	  (on_subs_replace_orig_changed), (on_subs_replace_new_changed),
+	  (on_insert_entry_changed), (on_insert_pos_changed),
+	  (on_delete_from_changed), (on_delete_to_changed),
+	  (on_manual_changed), (on_images_original_pattern_changed),
+	  (on_images_renamed_pattern_changed), (on_music_original_pattern_changed),
+	  (on_music_renamed_pattern_changed), (on_original_pattern_combo_changed),
+	  (on_renamed_pattern_combo_changed), (on_images_original_pattern_combo_changed),
+	  (on_images_renamed_pattern_combo_changed),
+	  (on_music_original_pattern_combo_changed),
+	  (on_music_renamed_pattern_combo_changed):
+	* src/pyrenamer_prefs.py: (__init__), (on_autopreview_check_toggled),
+	  (preferences_save), (preferences_read):
+	Add autopreview option.
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	* src/pyrenamer.py: (__init__):
+	* src/pyrenamer_menu_cb.py: (on_menu_refresh_activate):
+	Add refresh option to view menu (F5) to reload files and directories.
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/treefilebrowser.py: (set_active_dir):
+	Don't expand last row while activating.
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_filefuncs.py: (replace_capitalization):
+	Fix file capitalization.
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (__init__):
+	Fixed bug: If root or active dir is hidden pyrenamer fails.
+
+	* src/treefilebrowser.py: (set_show_hidden), (button_pressed),
+	  (create_popup):
+	Fix some bugs with hidden dirs/files. Right-click doesn't
+	select file anymore.
+
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_filefuncs.py: (replace_with), (rename_using_patterns),
+	  (insert_at), (delete_from):
+	Reverted clean filename. Only do it for music and images,
+	so we can use patterns like "dir/{1}" to move files to
+	another directory.
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	* src/Makefile.am:
+	* src/pyrenamer.py: (__init__), i(rename_rows),
+	  (on_rename_button_clicked):
+	* src/pyrenamer_menu_cb.py: (PyrenamerMenuCB):
+	* src/pyrenamer_undo.py:
+	Added support for undo/redo last rename operation.
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_filefuncs.py: (replace_with), (rename_using_patterns),
+	  (replace_images), (replace_music), (insert_at), (add_extension),
+	  (clean_filename):
+	Clean filename of  special characters.
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	* src/pyrenamer_filefuncs.py: (replace_music):
+	Use 'myear' for getting an album year in music renaming, instead of
+	year, which is used for getting current year.
+
+2008-09-10  Adolfo González Blázquez  <code@infinicode.org>
+
+	* configure.ac:
+	* src/pyrenamer.py:
+	* src/pyrenamer_filefuncs.py: (replace_music), (replace_music_old):
+	* src/pyrenamer_globals.py.in:
+	Use hachoir_metadata instead of eyed3 for music renaming.
+
+2008-09-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (preview_rename_rows):
+	Remove uneeded print statement.
+
+2008-09-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_pattern_editor.py: (get_patterns):
+	Fixed typo which set bad initial pattern.
+
+2008-09-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_filefuncs.py: (replace_music):
+	Fix crash when a id3 tag is not available or wrong.
+
+2008-09-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_filefuncs.py: (get_exif_data):
+	Fix crash while proccesing some bad exif tags (Closes launchpad #261832).
+
+2008-09-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_filefuncs.py: (add_extension):
+	Fix crashing when extension or name are empty.
+
+2008-09-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.svg:
+	* data/pyrenamer.png:
+	New icon.
+
+2008-09-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (__init__), (populate_pattern_combos),
+	(on_original_pattern_combo_changed),
+	(on_renamed_pattern_combo_changed),
+	(on_images_original_pattern_combo_changed),
+	(on_images_renamed_pattern_combo_changed),
+	(on_music_original_pattern_combo_changed),
+	(on_music_renamed_pattern_combo_changed):
+	* src/pyrenamer_pattern_editor.py: (get_patterns):
+	Remember default selected pattern after launch editor.
+	On start, we select the first option.
+
+2008-09-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (__init__), (populate_pattern_combos),
+	(on_pattern_ori_save_clicked), (on_pattern_dest_save_clicked),
+	(on_images_ori_save_clicked), (on_images_dest_save_clicked),
+	(on_music_ori_save_clicked), (on_music_dest_save_clicked):
+	* src/pyrenamer_pattern_editor.py: (populate_treeview):
+	Changed main patterns variable from list to dictionary
+
+2008-09-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (on_pattern_ori_save_clicked),
+	(on_pattern_dest_save_clicked), (on_images_ori_save_clicked),
+	(on_images_dest_save_clicked), (on_music_ori_save_clicked),
+	(on_music_dest_save_clicked):
+	* src/pyrenamer_pattern_editor.py: (add_pattern):
+	Save pattern from main UI using the little button
+
+2008-09-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_globals.py.in:
+	Updated copyright date
+
+2008-09-08  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	* src/Makefile.am:
+	* src/pyrenamer.py:
+	* src/pyrenamer_globals.py.in:
+	Preliminary support for remebering patterns
+
+2008-09-08  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (__init__):
+	* src/pyrenamer_globals.py:
+	New global variables: home_dir and config_dir
+
+	* src/pyrenamer.glade:
+	Added UI support for saving patterns
+
+2008-06-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer_filefuncs.py: (rename_file):
+	Allow renamimg files and moving them to another directory
+
+2008-04-18  Adolfo González Blázquez  <code@infinicode.org>
+
+	* doc/treefilebrowser_example.py:
+	* src/pyrenamer.py:
+	* src/pyrenamer_filefuncs.py:
+	* src/pyrenamer_menu_cb.py:
+	* src/pyrenamer_metadata.py:
+	* src/pyrenamer_prefs.py:
+	* src/pyrenamer_tooltips.py:
+	* src/treefilebrowser.py:
+	Updated date on copyright header
+
+	* src/pyrenamer_metadata.py: (get_artist):
+	"Artist" and "Author" are both correct tags for Artist
+
+2008-04-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* src/pyrenamer.py: (preview_rename_rows):
+	Fix extension keeping for music and images
+
+	* src/pyrenamer_filefuncs.py: (replace_music):
+	Added zero fill to tracks (1 -> 01)
+
+	* src/pyrenamer.py: (preview_rename_rows):
+	Fix extension keeping for music and images
+
+	* src/pyrenamer_filefuncs.py: (replace_music), (replace_music_old),
+	  (add_extension):
+	Initial support for hachoir music metadata extraction
+
+
+	* src/pyrenamer.py: (preview_rename_rows):
+	* src/pyrenamer_filefuncs.py: (add_extension):
+	Keep extension not valid on manual rename
+
+2008-04-16  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	* data/pyrenamer.schemas.in:
+	* src/pyrenamer.py: (__init__),
+	  (preview_rename_rows), (options_panel_state),
+	  (populate_get_listing):
+	* src/pyrenamer_filefuncs.py: (replace_music), (delete_from),
+	  (cut_extension), (add_extension):
+	* src/pyrenamer_prefs.py: (__init__),
+	  (on_add_recursive_toggled),
+	  (on_filedir_combo_changed),
+	  (on_extensions_check_toggled),
+	  (preferences_save), (preferences_read):
+	Added option to ignore files extensions
+
+	* data/pyrenamer.glade:
+	* src/pyrenamer_filefuncs.py: (rename_using_patterns):
+	Added random number pattern {rand}
+
+	* src/pyrenamer.py: (create_model),
+	  (populate_add_to_view), (populate_from_file),
+	  (get_icon):
+	Added mime icon to files
+
+	* src/pyrenamer.py: (populate_get_listing):
+	* src/pyrenamer_filefuncs.py: (get_file_listing),
+	  (get_file_listing_recursive):
+	* src/pyrenamer_prefs.py: (on_filedir_combo_changed):
+	Added option to rename directories
+
+2008-04-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	* data/pyrenamer.schemas.in:
+	GUI improved with options panel
+
+	* src/pyrenamer.py: (__init__),
+	  (enable_rename_and_clean),
+	  (on_main_hpaned_notify),
+	  (on_options_button_clicked),
+	  (options_panel_state), (on_preferences_activate),
+	  (on_main_quit):
+	Massive code refactorings
+
+2008-04-09  Adolfo González Blázquez <code@infinicode.org>
+
+	* data/pyrenamer.desktop.in.in.in:
+	"Encoding" field is deprecated from desktop files, so removed
+
+2008-04-09  Adolfo González Blázquez <code@infinicode.org>
+
+	* Version 0.5.0 Released
+
+2007-11-26  Adolfo González Blázquez <code@infinicode.org>
+
+	* pyrenamer.py: (__init__),
+					(on_menu_load_names_from_file_activate),
+					(populate_from_file):
+	* data/pyrenamer.glade:
+	Added option to read new file names from a text file
+
+2007-10-19  Adolfo González Blázquez <code@infinicode.org>
+
+	* images/Makefile.am:
+	* images/stop.png:
+	* pyrenamer.py: (__init__):
+	Smaller progress bar and new stop icon
+
+2007-10-18  Adolfo González Blázquez <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	* src/pyrenamerfilefuncs.py:
+	Added option to replace spaces to dashes and viceversa
+
+	* src/pyrenamerfilefuncs.py:
+	Czech language accents replacement (thanks to Jan Virt)
+
+	* doc/treefilebrowser_example.py:
+	* src/pyrenamer:
+	* src/pyrenamer.py:
+	* src/treefilebrowser.py:
+	Fixed pygtk imports (add pygtk.require())
+
+2007-08-13  Adolfo González Blázquez <code@infinicode.org>
+
+	* Version 0.4.1 Released
+
+	* src/pyrenamer.py:
+	Check if directories set on preferences are correct
+
+	* src/pyrenamer.py: (preferences_read):
+	Be more careful when reading directories from GConf
+
+	* src/treefilebrowser.py:
+	Remove printing of debug information
+
+	* src/pyrenamer.py: (on_manual_key_press_event):
+	Activate Rename button on selection using keys
+
+2007-08-11  Adolfo González Blázquez <code@infinicode.org>
+
+	* Version 0.4 Released
+
+	* data/pyrenamer.schemas.in:
+	Set default dirs to None
+
+	* src/pyrenamer.py:
+	Set sort help command to -h instead of -?
+
+	* doc/pyrenamer.1:
+	Updated man page
+
+	* src/pyrenamer.py: (on_manual_key_press_event):
+	Press Return to move to next file on Manual Rename
+
+	* src/pyrenamer.py:
+	Set window icon on Preferences and About dialogs
+
+	* src/pyrenamer_globals.py.in:
+	License little patch by Piotr Ożarowski
+
+2007-08-10  Adolfo González Blázquez <code@infinicode.org>
+
+	* src/pyrenamer.py:
+	* data/pyrenamer.glade:
+	Added preferences menu item and panel to select default directories
+
+	* src/pyrenamer.py: (__init__), (read_preferences), (save_preferences):
+	Add rootdir and activedir to gconf preferences
+
+	* src/pyrenamer:
+	* src/pyrenamer.py: (__init__):
+	Added support for command line options
+
+	* src/treefilebrowser.py: (__init__), (set_active_dir):
+	Print some errors if needed
+
+	* src/treefilebrowser.py: (set_active_dir):
+	If rootdir == activedir: set active the rootdir
+
+	* src/pyrenamer:
+	* src/pyrenamer.py:
+	Added support for command line options
+
+	* src/treefilebrowser.py: (set_active_dir), (create_root):
+	Fixed a couple of bugs in tree creation
+
+2007-08-09  Adolfo González Blázquez <code@infinicode.org>
+
+	* src/treefilebrowser.py: (set_active_dir):
+	If we can't read a dir, just ignore it (thanks to Piotr Ożarowski)
+
+	* src/pyrenamer.py:
+	Fix selection on Manual Rename tab
+
+	* src/pyrenamer.py:
+	Use user.home instead of os.environ['HOME']
+
+	* data/pyrenamer.glade:
+	Adjusted buttons a bit
+
+2007-08-08  Adolfo González Blázquez <code@infinicode.org>
+
+	* Updated .desktop file category
+
+	* Autoconf scripts updated
+
+	* src/pyrenamer.py:
+	* src/pyrenamer_globals.py.in:
+	Changes in About dialog
+
+	* src/pyrenamer.py:
+	* data/pyrenamer.glade:
+	Disable Clear button when needed
+
+	* pyrenamerfilefuncs.py:
+	Better unicode support
+
+	* src/pyrenamer.py:
+	Fix clean preview
+
+	* data/pyrenamer.glade:
+	Update button layout
+
+	* src/treefilebrowser.py: (cursor_changed), (make_view):
+	Fix find-as-you-type selection
+
+	* src/pyrenamer.py:
+	* data/pyrenamer.glade:
+	Better file selection filter
+
+	* src/pyrenamer.py:
+	* data/pyrenamer.glade:
+	Added "Clear Preview" button and menu item
+
+2007-08-07  Adolfo González Blázquez <code@infinicode.org>
+
+	* src/pyrenamer.py: (on_clean_button_clicked):
+	Don't activate Rename button and menu item when clicking on Clean
+
+	* src/pyrenamer.py: (__init__), (preview_clean), (on_clean_button_clicked):
+	* data/pyrenamer.glade:
+	Add button to clean previewed filenames
+
+	* src/pyrenamer.py: (preview_selected_row),
+						(on_selected_files_cursor_changed),
+						(on_manual_key_press_event):
+	Preview new filename when clicking PAGE_UP or PAGE_DOWN on manual rename
+
+2007-08-02  Adolfo González Blázquez <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	* pyrenamerfilefuncs.py: (rename_using_patterns):
+	Fixed bug on {num} pattern, and changed syntax from {num-5} to {num+5} to start counting at 5
+
+2007-07-30  Adolfo González Blázquez <code@infinicode.org>
+
+	* Version 0.3 Released
+
+	* src/pyrenamer.py: (on_manual_key_press_event):
+	* data/pyrenamer.glade:
+	In "Manual Rename" mode, you can select the next and prev file using PAGE_UP and PAGE_DOWN keys
+
+	* src/pyrenamer.py: (preview_rename_rows):
+	Disable filter by selection on manual rename
+
+	* src/pyrenamerfilefuncs.py: (rename_file):
+	Fixed typo (_ instead of -)
+
+2007-07-25  Adolfo González Blázquez <code@infinicode.org>
+
+	* configure.ac:
+	* data/Makefile.am:
+	* data/pyrenamer.desktop.in.in:
+	* data/pyrenamer.glade:
+	* Makefile.am:
+	* po/*:
+	* src/pyrenamer_globals.py.in:
+	* src/pyrenamer.py:
+	* src/pyrenamerfilefuncs.py:
+	* src/tooltips.py:
+	* src/treefilebrowser.py:
+	Added internationalization support (English and Spanish by now)
+
+	* data/pyrenamer.schemas.in:
+	Set good default values for window pos/size
+
+	* src/pyrenamer.py: (preview_rename_rows), (on_rename_button_clicked), (on_preview_button_clicked):
+	Better handling of file selection (update all list when preview is clicked, not just selected)
+
+	* src/treefilebrowser.py: (get_folder_closed_icon), (get_folder_opened_icon):
+	Don't display errors on console if icons are not available
+
+	* src/pyrenamerfilefuncs.py: (rename_file):
+	Don't show error if we're trying to rename a file with the same name
+
+2007-07-23  Adolfo González Blázquez <code@infinicode.org>
+
+	* Version 0.2 Released
+
+	* src/treefilebrowser.py: (get_folder_closed_icon), (get_folder_opened_icon):
+	Show default gtk-directory icon if theme default fails
+
+	* src/pyrenamer.py: (__init__), (on_preview_button_clicked), (populate_add_to_view):
+	Count correctly the items displayed (self.count = 0)
+
+	* src/treefilebrowser.py: (__init__), (set_show_hidden), (button_pressed), (show_hidden_toggled),
+	(create_popup), (make_view):
+	Add right-click context menu, with "Show hidden files" option
+
+	* data/pyrenamer.glade:
+	Added Edit menu (Cut, Copy, Paste, Clear, Select All, Select Nothing)
+
+	* src/pyrenamer.py:
+	Added Edit menu (Cut, Copy, Paste, Clear, Select All, Select Nothing)
+
+	* src/pyrenamer.py:
+	Preview and rename just selected items (nothing selected = all selected)
+
+	* src/pyrenamerfilefuncs.py: (rename_file):
+	Avoid overwritting files when renaming (don't rename if a file with the same name already exists)
+
+	* data/pyrenamer.glade:
+	* src/pyrenamer.py:
+	Remove "Show hidden dirs" check box, as we have a context menu now on tree widget
+
+	* data/pyrenamer.glade:
+	Add tooltip information for "File selection pattern" entry
+
+2007-07-20  Adolfo González Blázquez <code@infinicode.org>
+
+	* configure.ac:
+	Check if eyeD3 is installed, and enable music rename if it is
+
+	* data/pyrenamer.glade:
+	Add support for music renaming using MP3 id3 tags
+
+	* src/pyrenamer.py: (__init__), (preview_rename_rows):
+	Add support for renaming MP3 using its id3 tags
+
+	* src/pyrenamer.py:
+	Some refactorings
+
+	* src/pyrenamer_globals.py.in:
+	Added variable "have_eyed3" to control if we have support for reading mp3'd id3 tags
+
+	* src/pyrenamerfilefuncs.py: (replace_images):
+	Add support for renaming using EXIF date tags
+
+	* src/pyrenamerfilefuncs.py: (replace_music):
+	Add support for renaming MP3 using its id3 tags
+
+2007-06-27  Adolfo González Blázquez <code@infinicode.org>
+
+	* data/pyrenamer.glade:
+	Add support for extracting EXIF info from images, in a new tab called Images
+
+	* src/pyrenamerfilefuncs.py: (rename_using_patterns), (replace_images), (get_exif_data):
+	Add support for extracting EXIF info from images, in a new tab called Images
+
+	* src/pyrenamer.py:
+	Add support for extracting EXIF info from images, in a new tab called Images
+
+2007-06-15  Adolfo González Blázquez <code@infinicode.org>
+
+	* src/pyrenamerfilefuncs.py: (escape_pattern), (get_file_listing):
+	Add function to scape special chars on patterns, so glob doesn't get confused.
+
+	* src/EXIF.py: Added EXIF parser from Gene Cash.
+
+	* src/pyrenamerfilefuncs.py: (rename_using_patterns), (get_exif_data):
+	Add support for extracting EXIF date info from images, to be used in the pattern view.
+
+2007-06-14  Adolfo González Blázquez <code@infinicode.org>
+
+	* Initial release

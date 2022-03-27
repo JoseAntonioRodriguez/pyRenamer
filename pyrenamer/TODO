@@ -1,0 +1,40 @@
+TODO
+
+	* Reorder elements in treeview
+	* Edit filename directly on treeview
+	* Drop gconf for python's ConfigParser
+	* Add support for 1 char/number pattern, or to define just a number
+	  of chars, something like char{3} or {#4} for 4 numbers.
+	* Add more patterns
+
+
+
+DONE
+
+	x Fix read position of panels when window is not maximized
+	x Ignore next errors dialog
+	x Music rename: hachoir > eyed3 > none
+	x Fix bug while renaming folders recursively
+	x Fix repeated symbols (... -> . | __ -> _ | '   ' -> ' ')
+	x Fix file selected on changing to manual renaming
+	x Auto preview
+	x Reload folder
+	x Start on hidden directory
+	x End saving patterns:
+		x Direct save
+		x Remember default combo option
+	x Undo last rename:
+		x Use a list with the changes
+		- Display a window before undoing with the changes?????
+	x Fix exceptions causing apport to report bugs on launchpad
+	x New icon
+	x Fix bugs:
+		x Empty name + Extension
+		x try: except: music and images
+	x Add support from other music formats (ogg, ape, etc.)
+	x Rename folder
+	x Move files to another directories (target/$1)
+	x Keep extensions while renaming
+	x Unicode problems:
+		- For example, if I have the file "Episódio 2.srt", I can use the pattern
+		  '{X} {C}.srt' but not 'Episódio {C}.srt'.

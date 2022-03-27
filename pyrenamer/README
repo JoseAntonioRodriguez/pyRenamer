@@ -1,0 +1,72 @@
+-========================-
+-=   pyRenamer 0.6.0    =-
+-========================-
+
+  pyRenamer is an application for mass renaming files.
+
+  You can rename files using patterns, substitutions,
+  insert or delete text, or even rename files manually.
+  You can also rename images using their EXIF tags
+  and music using their internal tags.
+
+  pyRenamer is released under the terms of the GNU General Public License.
+
+
+-= You need =_
+  * python
+  * pygtk (>= 2.6)
+  * gconf
+  * python-hachoir-metadata (for music renaming)
+     or
+    python-eyed3 (for renaming MP3s)
+
+
+-= To install =-
+  $ ./configure --prefix /usr
+  $ make
+  $ sudo make install
+
+
+-= To run pyRenamer =-
+
+  $ pyrenamer
+  		This will launch pyRenamer
+
+  $ pyrenamer /home/user/Music
+		This will launch pyRenamer and select /home/user/Music as active dir
+
+  $ pyrenamer --root /mnt/music
+  		This will set /mnt/music as the roor dir on left directories tree
+
+  $ pyrenamer --root /mnt/music /mnt/music/hardcorepunk
+  		This is like above option, but setting /mnt/music/hardcorepunk as active dir
+
+  $ pyrenamer --help
+  		This will show available command line options
+
+-= Website =-
+  More info on: http://www.infinicode.org/code/pyrenamer/
+
+
+-= Author =-
+  Adolfo González Blázquez <code@infinicode.org>
+
+-= Translators =-
+  French: Christophe Perez <christophe.perez.mail@gmail.com>
+  German: Vinzenz Vietzke <vinz@v1nz.org>
+          Christian Kirbach <Christian.Kirbach@googlemail.com>
+
+
+-= TreeFileBrowser =-
+  pyRenamer uses a widget called treefilebrowser.py, which is a tree-like file browser,
+  just like the one on Nautilus side bar.
+  You can see its source code on src/treefilebrowser.py
+  There's an example on how to use it on doc/treefilebrowser_example.py
+
+
+-= Thanks =-
+  pyRenamer uses TreeViewTooltips.py from Daniel J. Popowich <dpopowich@astro.umass.edu>
+  pyRenamer uses EXIF.py from Gene Cash <gcash@cfl.rr.com>
+  Thanks to Piotr Ożarowski for sponsoring Debian packages and helping debugging
+  Thanks to Jeremy Messenger for freebsd packaging and helping debugging
+  Thanks to Jan Virt for czech language accents replacement

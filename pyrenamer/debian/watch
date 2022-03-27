@@ -1,0 +1,5 @@
+# Compulsory line, this is a version 3 file
+version=3
+
+# Download from infinicode.org
+http://www.infinicode.org/code/pyrenamer/files/ pyrenamer-(.*)\.tar\.gz

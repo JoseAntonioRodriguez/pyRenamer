@@ -1,0 +1,91 @@
+2008-09-17  Adolfo González Blázquez  <code@infinicode.org>
+
+	* Version 0.6 released:
+	* New features:
+		- You can save your favorite patterns to reuse them
+		- Undo/redo feature
+		- Now you can rename more music formats (ogg, real... those supported by hachoir)
+		- You can keep file extensions untouched while renaming
+		- Now you can rename directories
+		- Allow renaming files and moving them to another directory
+		- Added some icons to identify file types
+		- Added random number pattern {rand}
+		- Added refresh option, to reload files and directories
+		- Added autopreview option
+		- Add option to fix duplicated symbols on filename
+		- Add option to ignore next errors while renaming
+		- Better explanations on error dialogs
+		- New icon
+	* Bug fixes:
+		- Files don't appear duplicated anymore
+		- The position of the window is now placed correctly when pyRenamer starts
+		- Fixed bug when trying to display error dialog on bad preferences
+		- Reverse elements on recursive listing, so we rename deeper files and directories first
+		- Fix file capitalization
+		- If root or active dir is hidden, pyrenamer fails no more
+		- Use {myear} for getting an album year in music renaming, instead of {year}
+		- Fix crash when a id3 tag is not available or wrong, returning an empty filename (LP: #235161)
+		- Fix crash while processing some bad exif tags, catching possible exceptions (LP: #261832)
+		- Fix crash while starting, fixing src/treefilebrowser.py (LP: #237482)
+		- Fix crashing when extension or name are empty
+		- Fixes on manual renaming: cleaning correctly and changing file with keyboard.
+
+
+2008-04-09  Adolfo González Blázquez  <code@infinicode.org>
+
+	* Version 0.5.0 Released
+	* Added option to read new file names from a text file
+	* Smaller progress bar and new stop icon
+	* Added option to replace spaces to dashes and viceversa
+	* Czech language accents replacement (thanks to Jan Virt)
+	* Fixed pygtk imports (add pygtk.require())
+
+
+2007-08-13  Adolfo González Blázquez  <code@infinicode.org>
+
+	* Version 0.4.1 Released
+	* Check if directories set on Preferences are correct
+	* Remove debug info from console
+	* Fix bug reading preferences from gconf
+	* Activate Rename button on selection using keys
+
+
+2007-08-08  Adolfo González Blázquez  <code@infinicode.org>
+
+	* Version 0.4 Released
+	* Now you can start pyRenamer in the directory that you want
+	* Preferences added to set default directories
+	* Added command line options to set directories
+	* Fixed bug on {num} pattern and syntax change from {num-2} to {num+2}
+	* Preview new filename when clicking PAGE_UP, PAGE_DOWN or RETURN on manual rename
+	* Add button to clear previewed filenames
+	* Better file selection filter
+	* Better unicode support
+	* Some GUI changes
+	* Bug fixes
+
+
+2007-07-30  Adolfo González Blázquez  <code@infinicode.org>
+
+	* Version 0.3 Released
+	* Added internationalization support (english and spanish by now)
+	* Better handling of file selection filter
+	* Better manual renaming (you can use page_up and page_down to select next/prev file)
+	* Set good default values for window pos/size (bugfix)
+	* Bugfixes
+
+
+2007-07-23  Adolfo González Blázquez  <code@infinicode.org>
+
+	* Version 0.2 Released
+	* Added support for renaming images using their EXIF tags
+	* Added support for renaming MP3 files using their ID3 tags (using eyeD3)
+	* Added support for renaming only the selected files on list
+	* Added context menu to tree widget, to show hidden directories
+	* Some UI changes
+	* Fixed several bugs
+
+
+2007-06-14  Adolfo González Blázquez  <code@infinicode.org>
+
+	* Version 0.1 Released

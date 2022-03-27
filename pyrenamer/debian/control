@@ -1,0 +1,21 @@
+Source: pyrenamer
+Section: gnome
+Priority: optional
+Maintainer: Adolfo González Blázquez <code@infinicode.org>
+Build-Depends: debhelper (>= 5.0.38), cdbs (>= 0.4.49)
+Build-Depends-Indep: python, python-support (>= 0.5.3), python-gtk2-dev (>= 2.4), libgconf2-dev, libxml-parser-perl
+XS-Python-Version: >= 2.4
+Standards-Version: 3.8.0
+Homepage: http://www.infinicode.org/code/pyrenamer/
+
+Package: pyrenamer
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-gtk2 (>= 2.4), python-glade2, python-hachoir-metadata | python-eyed3
+Recommends: python-gnome2
+XB-Python-Version: ${python:Versions}
+Description: mass file renamer written in PyGTK
+ You can rename files using patterns, search and replace,
+ substitutions, insert or delete text, or even rename
+ files manually.
+ You can also rename images using their EXIF tags
+ and music using their internal tags.
